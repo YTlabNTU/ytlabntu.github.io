@@ -1,6 +1,6 @@
 ---
 layout: member
-category: staff
+category: principal investigator
 title: Jeanne Bertrand
 image: jeanne.jpg
 role: Project Manager
