@@ -3,7 +3,7 @@ layout: member
 category: principal investigator
 title: Yu-Ting Hsu PhD
 image: YT.jpeg
-role: Associate Professor|Principal Investigator
+role: Associate Professor & Principal Investigator
 permalink: 'team/yutinghsu'
 social:
   twitter:
