@@ -2,7 +2,7 @@
 layout: member
 category: alumni
 title: Chung-Kang Hsiao
-image: Chung-Kang.jpg
+image: Chung-Kang.jpeg
 role: Master Student
 permalink: 'team/chung-kang'
 social:
