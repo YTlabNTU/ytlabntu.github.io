@@ -1,10 +1,10 @@
 ---
-title: RT2 Lab
+title: YT Lab
 layout: homelay
 permalink: /
 ---
 
-The “Residual Tumor and Response to Treatment Laboratory” has four main goals.
+The vision of YT lab at National Taiwan University has four main goals.
 
 **Identification of clinical and pathological factors correlated with the long-term prognosis of TNBC and HER2 positive breast cancer patients treated by neoadjuvant chemotherapy.**
 
