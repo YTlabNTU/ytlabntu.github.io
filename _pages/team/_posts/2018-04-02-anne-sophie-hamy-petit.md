@@ -13,16 +13,10 @@ social:
     website: https://ivanshihtw.github.io
     orcid: https://orcid.org/my-orcid?orcid=0000-0002-4494-2935
 education:
+- University of Michigan, PhD student in Next Generation Transportation Systems
+- National Taiwan University, MS in Transportation Engineering (2022)
+- National Taiwan University, BS in Civil Engineering (2020)
 
 ---
 
-Medical Gynecologist Oncologist, MD, PhD.
-
-Highly implicated in clinical research projects.
-
-Domains of interest : Breast cancer, neoadjuvant treatment, drug repurposing,
-biostatistics, bioinformatics, Oncofertility, young women, health data, Immunity.
-
-Principal Investigator of the FEERIC study, a french nationwide study aiming
-at evaluating fertility and contraception in breast cancer survivors
-compared to controls.
+Hi there, I am Ivan Shih who work as a research assistant at YT Lab at NTUCE.
