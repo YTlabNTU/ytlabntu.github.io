@@ -1,18 +1,19 @@
 ---
 layout: member
 category: staff
-title: 'Anne Sophie Hamy Petit'
-image: 'anne-sophie.jpeg'
-role: Lab co-director
-permalink: 'team/anne-sophie-hamy-petit'
+title: 'Hsin-Cheng Ivan Shih'
+image: 'Ivan-Shih.jpeg'
+role: Research Assistant
+permalink: 'team/ivanshih'
 social:
-    twitter: https://twitter.com/ashamypetit
-    linkedin: https://linkedin.com/in/anne-sophie-hamy-petit-7a65b339
-    google-scholar: https://scholar.google.com/citations?user=V0ZM_KAAAAAJ&hl=en
+    twitter: 
+    linkedin: https://www.linkedin.com/in/hsin-cheng-shih/
+    google-scholar: https://scholar.google.com.tw/citations?user=00cIJo8AAAAJ&hl=zh-TW
     github:
-    website:
-    orcid:
+    website: https://ivanshihtw.github.io
+    orcid: https://orcid.org/my-orcid?orcid=0000-0002-4494-2935
 education:
+
 ---
 
 Medical Gynecologist Oncologist, MD, PhD.
