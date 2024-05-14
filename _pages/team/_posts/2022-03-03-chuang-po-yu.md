@@ -1,7 +1,7 @@
 ---
 layout: member
 category: master-student
-title: Chuang Po-Yu
+title: Po-Yu Chuang
 image: po-yu.jpeg
 role: Master Student
 permalink: 'team/chuang-po-yu'
