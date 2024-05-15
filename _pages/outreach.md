@@ -1,7 +1,7 @@
 ---
-title: Activities
+title: Outreach
 layout: page
-permalink: /activities/
+permalink: /outreach/
 ---
 
 ## 112學年度高中職生運輸深耕競賽活動
