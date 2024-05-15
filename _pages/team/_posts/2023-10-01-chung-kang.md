@@ -6,7 +6,7 @@ image: Chung-Kang.jpeg
 role: Engineer@HwaCom | Former MS Student
 permalink: 'team/chung-kang'
 social:
-    mail:
+    email:
     twitter: 
     linkedin: 
     google-scholar: 
