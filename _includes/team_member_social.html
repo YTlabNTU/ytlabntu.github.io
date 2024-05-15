@@ -1,5 +1,9 @@
 <script src="https://kit.fontawesome.com/3cfa459ed1.js" crossorigin="anonymous"></script>
 <ul class="list-inline list-unstyled">
+    <!-- Email -->
+    {% if member.social.email %}
+    <li class="list-inline-item"><a target="blank" href="{{member.social.email}}"><i class="fa-solid fa-envelope"></i></a></li>
+    {% endif %}
     <!-- Twitter -->
     {% if member.social.twitter %}
     <li class="list-inline-item"><a target="blank" href="{{member.social.twitter}}"><i class="fab fa-twitter"></i></a></li>
