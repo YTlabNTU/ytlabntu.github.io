@@ -8,7 +8,7 @@ permalink: 'team/mingtseng'
 social:
     email:
     twitter: 
-    linkedin: https://www.linkedin.com/in/chung-kang-hsiao-395600268/
+    linkedin: 
     google-scholar: 
     github: 
     website: 
