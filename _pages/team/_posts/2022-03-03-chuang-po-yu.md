@@ -18,4 +18,5 @@ education:
 
 ---
 
-I'm currently pursuing a master degree in NTU..... to be updated....
+<h3>Bio</h3>
+Po-Yu loves trains and railway........
