@@ -19,4 +19,4 @@ education:
  - National Taiwan University, BS in Forestry (2021)
 ---
 
-Passionate about basketball and girls.
+Passionate about basketball and girls (especially aunties).
