@@ -21,4 +21,5 @@ education:
   - "National Taiwan University, BS in Civil Engineering (2002)"
 ---
 
+<h3>Bio</h3>
 I am a associate professor at National Taiwan University. I live in Luzhou and my dream is to buy a mansion in Taipei.
