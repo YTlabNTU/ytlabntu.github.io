@@ -8,7 +8,7 @@ permalink: 'team/yutinghsu'
 social:
   email: mailto:yutinghsu@ntu.edu.tw
   twitter:
-  linkedin: https://fr.linkedin.com/in/jeanne-bertrand-029300119
+  linkedin: 
   google-scholar: https://scholar.google.com.tw/citations?user=WWrZhf0AAAAJ&hl=zh-TW
   github:
   website:
