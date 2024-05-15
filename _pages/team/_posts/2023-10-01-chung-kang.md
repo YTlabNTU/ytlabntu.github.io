@@ -1,6 +1,6 @@
 ---
 layout: member
-category: alumni
+category: alumni-master
 title: Chung-Kang Hsiao
 image: Chung-Kang.jpeg
 role: Engineer@HwaCom | Former MS Student
