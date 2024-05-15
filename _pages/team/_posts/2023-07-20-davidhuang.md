@@ -3,7 +3,7 @@ layout: member
 category: alumni-master
 title: Yu-Wei Huang
 image: r09_昱瑋.JPG
-role: Exchage Student@RUAS | Former MS Student
+role: Exchage Student@RUAS
 permalink: 'team/davidhuang'
 social:
     email: mailto:hbsdavidking@gmail.com
