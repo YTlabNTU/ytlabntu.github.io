@@ -9,13 +9,13 @@ social:
     email: mailto:hsinkaihuang@ntu.edu.tw
     twitter: 
     linkedin: 
-    google-scholar: 
-    github:
+    google-scholar: https://scholar.google.com.tw/citations?user=a-b9hdYAAAAJ&hl=zh-TW
+    github: 
     website:
-    orcid:
+    orcid: https://orcid.org/my-orcid?orcid=0009-0008-6656-3275
 education:
-- National Taiwan University, MS in Transportation (2023)
-- National Cheng Kung University, BS in Transportation Management (2021)
+- National Taiwan University, MS in Transportation Engineering (2023)
+- National Cheng Kung University, BAA in Transportation Management and Science (2021)
 
 ---
 
