@@ -4,7 +4,7 @@ layout: homelay
 permalink: /
 ---
 
-The vision of YT lab at National Taiwan University has four main goals.
+YT Lab aims to ..........
 
 **Better understand user of our transportation users**
 
