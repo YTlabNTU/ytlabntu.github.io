@@ -19,4 +19,5 @@ education:
  - National Taiwan University, BS in Forestry (2021)
 ---
 
+<h3>Bio</h3>
 Passionate about basketball and girls (especially aunties).
