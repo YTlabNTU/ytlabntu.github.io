@@ -19,4 +19,4 @@ education:
 
 ---
 
-To be update
+Hsin-Kai loves trains and railway. He has Japanese N0 certification and he got 130 on his TOEFL test.
