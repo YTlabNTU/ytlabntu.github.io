@@ -6,7 +6,7 @@ image: wilsonchen.png
 role: PhD Student
 permalink: 'team/wilsonchen'
 social:
-    mail:
+    email:
     twitter: 
     google-scholar:
     github: 
