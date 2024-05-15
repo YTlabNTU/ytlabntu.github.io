@@ -15,8 +15,8 @@ social:
   orcid: https://orcid.org/0000-0001-7467-0101
 education:
   - "Purdue University, PhD in Civil Engineering"
-  - "National Taiwan University, M.S. in Transportation Engineering"
-  - "National Taiwan University, B.S. in Civil Engineering"
+  - "National Taiwan University, MS in Transportation Engineering"
+  - "National Taiwan University, BS in Civil Engineering"
 ---
 
 I am a associate professor at National Taiwan University. I live in Luzhou and my dream is to buy a mansion in Taipei.
