@@ -3,7 +3,7 @@ layout: member
 category: alumni-master
 title: Ming-Yi Tseng
 image: r06_明儀.jpg
-role: RD Engineer@WeBIM Services | Former MS Student
+role: RD Engineer@WeBIM Services
 permalink: 'team/mingtseng'
 social:
     email: mailto:mindyplanet@gmail.com
