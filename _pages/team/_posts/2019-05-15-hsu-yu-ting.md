@@ -6,7 +6,7 @@ image: YT.jpeg
 role: Associate Professor & Principal Investigator
 permalink: 'team/yutinghsu'
 social:
-  email: yutinghsu@ntu.edu.tw
+  email: mailto:yutinghsu@ntu.edu.tw
   twitter:
   linkedin: https://fr.linkedin.com/in/jeanne-bertrand-029300119
   google-scholar: https://scholar.google.com.tw/citations?user=WWrZhf0AAAAJ&hl=zh-TW
