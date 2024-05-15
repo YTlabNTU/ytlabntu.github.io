@@ -6,6 +6,7 @@ image: po-yu.jpeg
 role: Master Student
 permalink: 'team/chuang-po-yu'
 social:
+    mail:
     twitter: 
     google-scholar:
     github: 
