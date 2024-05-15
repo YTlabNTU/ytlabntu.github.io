@@ -6,7 +6,7 @@ image: 'detective.png'
 role: Research Assistant
 permalink: 'team/detective'
 social:
-    email: hsinkaihuang@ntu.edu.tw
+    email: mailto:hsinkaihuang@ntu.edu.tw
     twitter: 
     linkedin: 
     google-scholar: 
