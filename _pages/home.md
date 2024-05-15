@@ -4,16 +4,24 @@ layout: homelay
 permalink: /
 ---
 
-YT Lab aims to ..........
+*YT Lab create knowledge and methods to improve our exprience in the transportation system. Our research focus on following aspects:*
 
-**Better understand user of our transportation users**
+**Traveler Behavior**
 
 We apply.....
 
-**Enhance resilience of our society**
+**Resilience of Transportation Network**
 
 We propose ....
 
-**Improve transportation system efficiency**
+**Transportation and Land Use**
 
 We value ....
+
+**Optimizing Transportation System**
+
+We develop ...
+
+**Disaster Response**
+
+We develop ...
