@@ -19,4 +19,4 @@ education:
   - "National Taiwan University, B.S. in Civil Engineering"
 ---
 
-I am currently associate professor at NTU.......... to be update
+I am a associate professor at National Taiwan University. I live in Luzhou and my dream is to buy a mansion in Taipei.
