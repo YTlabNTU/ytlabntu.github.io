@@ -20,4 +20,5 @@ education:
 
 ---
 
+<h3>Bio</h3>
 I'm currently pursuing a Ph.D. in Transportation Engineering at NTU........
