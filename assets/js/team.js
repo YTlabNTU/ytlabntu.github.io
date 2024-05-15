@@ -1,3 +1,5 @@
+console.log("Hello, world!")
+
 document.querySelectorAll('.team-member').forEach(item => {
   item.addEventListener('mouseover', event => {
     event.target.querySelector('img').classList.remove('grayscale-effect');
