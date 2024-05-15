@@ -6,7 +6,7 @@ image: r06_明儀.jpg
 role: RD Engineer@WeBIM Services | Former MS Student
 permalink: 'team/mingtseng'
 social:
-    email:
+    email: mailto:mindyplanet@gmail.com
     twitter: 
     linkedin: 
     google-scholar: 
