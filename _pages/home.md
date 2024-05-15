@@ -1,5 +1,5 @@
 ---
-title: YT Lab
+title: Welcome to YT Lab
 layout: homelay
 permalink: /
 ---
