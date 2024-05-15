@@ -3,7 +3,7 @@
         "Item Type": "journalArticle",
         "Publication Year": 2024.0,
         "Author": "Shih, Hsin-Cheng; Hsu, Yu-Ting; Lai, Yung-Cheng (Rex)",
-        "Title": "Modeling Non-Compensatory Strategies on Path Choices in a Complex Urban Rail Transit Network Considering Characteristics of Transfer Passengers and Trips.",
+        "Title": "Modeling Non-Compensatory Strategies on Path Choices in a Complex Urban Rail Transit Network Considering Characteristics of Transfer Passengers and Trips",
         "Short Title": "",
         "Publication Title": "Travel Behaviour and Society",
         "DOI": "https://doi.org/10.1016/j.tbs.2023.100733",
@@ -30,6 +30,55 @@
         "Issue": "10",
         "Volume": "2676",
         "Library Catalog": ""
+    },
+    {
+        "Item Type": "journalArticle",
+        "Publication Year": 2022.0,
+        "Author": "Sun, Min-Ci; Sakai, Katsuya; Chen, Albert Y.; Hsu, Yu-Ting",
+        "Title": "Location problems of vertical evacuation structures for dam-failure floods: Considering shelter-in-place and horizontal evacuation",
+        "Short Title": "",
+        "Publication Title": "International Journal of Disaster Risk Reduction",
+        "DOI": "https://doi.org/10.1016/j.ijdrr.2022.103044",
+        "Url": "",
+        "Abstract Note": "",
+        "Date": "2022-07-11",
+        "Pages": "103044",
+        "Issue": "",
+        "Volume": "77",
+        "Library Catalog": ""
+    },
+    {
+        "Item Type": "journalArticle",
+        "Publication Year": 2022.0,
+        "Author": "Chou, Chi-Ya; Lin, Szu-Yun; Yang, Cheng-Tao; Hsu, Yu-Ting",
+        "Title": "Risk perception of earthquakes: Modeling conception of willingness to pay and prospect theory",
+        "Short Title": "",
+        "Publication Title": "International Journal of Disaster Risk Reduction",
+        "DOI": "https://doi.org/10.1016/j.ijdrr.2022.103058",
+        "Url": "",
+        "Abstract Note": "",
+        "Date": "2022-07-1",
+        "Pages": "103058",
+        "Issue": "",
+        "Volume": "77",
+        "Library Catalog": ""
+    },
+    {
+        "Item Type": "journalArticle",
+        "Publication Year": 2022.0,
+        "Author": "Su, Yi-Min; Chen, Jieh-Haur; Cheng, Jiun-Yao; Hsu, Yu-Ting; Huang, Ming-Cheng",
+        "Title": "Rough-Set Based Association Rules toward Performance of High-Friction Road Markings",
+        "Short Title": "",
+        "Publication Title": "Journal of Transportation Engineering, Part B: Pavements",
+        "DOI": "https://doi.org/10.1061/JPEODX.0000355",
+        "Url": "",
+        "Abstract Note": "",
+        "Date": "2022-06-1",
+        "Pages": "05022001",
+        "Issue": "2",
+        "Volume": "148",
+        "Library Catalog": ""
     }
+    
     
 ]
