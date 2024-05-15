@@ -1,4 +1,4 @@
-<title>{{ member.title }} | YT Lab</title>
+<title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
 
 <li class="media mb-5">
     <img class="align-self-center mr-3"
