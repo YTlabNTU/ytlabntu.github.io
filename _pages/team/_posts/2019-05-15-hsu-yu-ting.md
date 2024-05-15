@@ -13,6 +13,8 @@ social:
   github:
   website:
   orcid: https://orcid.org/0000-0001-7467-0101
+  researchgate: https://www.researchgate.net/profile/Yu-Ting-Hsu
+
 education:
   - "Purdue University, PhD in Civil Engineering (2013)"
   - "National Taiwan University, MS in Transportation Engineering (2004)"
