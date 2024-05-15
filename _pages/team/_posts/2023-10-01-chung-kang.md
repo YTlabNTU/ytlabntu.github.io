@@ -3,9 +3,10 @@ layout: member
 category: alumni
 title: Chung-Kang Hsiao
 image: Chung-Kang.jpeg
-role: Master Student
+role: Engineer@HwaCom | Former MS Student
 permalink: 'team/chung-kang'
 social:
+    mail:
     twitter: 
     linkedin: 
     google-scholar: 
