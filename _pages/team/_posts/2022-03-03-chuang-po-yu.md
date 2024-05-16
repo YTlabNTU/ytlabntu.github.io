@@ -2,7 +2,7 @@
 layout: member
 category: master-student
 title: Po-Yu Chuang
-image: po-yu.jpeg
+image: R11_博宇.jpg
 role: Master Student
 permalink: 'team/chuang-po-yu'
 social:
