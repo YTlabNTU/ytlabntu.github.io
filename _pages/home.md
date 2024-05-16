@@ -1,5 +1,7 @@
 ---
 title: Welcome to YT Lab
+description: Official Website of Prof. Yu-Ting Hsu's Lab
+keywords: Yu-Ting Hsu, NTU, NTUCE, National Taiwan University, Civil Engineering, Transportation Engineering
 layout: homelay
 permalink: /
 ---
