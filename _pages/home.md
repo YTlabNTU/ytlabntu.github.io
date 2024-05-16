@@ -26,4 +26,4 @@ We develop cutting-edge optimization algorithms and simulation tools to maximize
 
 **Disaster Response**
 
-We develop proactive strategies and technologies to improve emergency response and recovery efforts in the transportation sector, ensuring swift and coordinated actions to mitigate the impacts of disasters and facilitate rapid restoration of critical transportation infrastructure.
+We devise proactive strategies and technologies to improve emergency response and recovery efforts in the transportation sector, ensuring swift and coordinated actions to mitigate the impacts of disasters and facilitate rapid restoration of critical transportation infrastructure.
