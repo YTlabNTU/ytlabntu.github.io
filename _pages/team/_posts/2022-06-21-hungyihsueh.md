@@ -4,7 +4,7 @@ category: alumni-master
 title: Hung-Yi Hsueh
 image: R09_宏毅.JPG
 role: Engineer@SEC
-permalink: 'team/davidhuang'
+permalink: 'team/hungyihseuh'
 social:
     email: mailto:jc210079@gmail.com
     twitter: 
