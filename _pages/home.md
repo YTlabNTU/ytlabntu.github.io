@@ -10,20 +10,20 @@ permalink: /
 
 **Traveler Behavior**
 
-We apply.....
+We apply advanced data analytics and behavioral psychology principles to understand how individuals make travel decisions, allowing us to design more efficient and user-centric transportation solutions.
 
 **Resilience of Transportation Network**
 
-We propose ....
+We propose robust modeling frameworks and innovative infrastructure designs to enhance the resilience of transportation networks against various disruptions, ensuring continued functionality and accessibility in the face of challenges.
 
 **Transportation and Land Use**
 
-We value ....
+We value the intricate relationship between transportation systems and urban development, aiming to foster sustainable and livable communities through integrated planning approaches that prioritize accessibility, equity, and environmental sustainability.
 
 **Optimizing Transportation System**
 
-We develop ...
+We develop cutting-edge optimization algorithms and simulation tools to maximize the efficiency, reliability, and affordability of transportation systems, enabling smoother mobility experiences for both passengers and freight.
 
 **Disaster Response**
 
-We develop ...
+We develop proactive strategies and technologies to improve emergency response and recovery efforts in the transportation sector, ensuring swift and coordinated actions to mitigate the impacts of disasters and facilitate rapid restoration of critical transportation infrastructure.
