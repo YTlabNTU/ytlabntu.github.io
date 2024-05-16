@@ -4,7 +4,7 @@ layout: homelay
 permalink: /
 ---
 
-*YT Lab create knowledge and methods to improve our exprience in the transportation system. Our research focus on following aspects:*
+*YT Lab creates knowledge and methods to improve our experience in the transportation system. Our research focuses on the following aspects:*
 
 **Traveler Behavior**
 
