@@ -13,6 +13,7 @@ social:
   github: https://github.com/HiJinger2266
   website:
   orcid:
+  youtube: https://www.youtube.com/@jinger-paper-city
 education:
   - "National Taiwan University, BS in Civil Engineering (2023)"
 ---
