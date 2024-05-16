@@ -16,7 +16,7 @@ social:
     research-gate: 
 education:
  - National Taiwan University, MS in Transportation Engineering (2020)
- - National Taiwan University, BS in Mechnical Engineering (2018)
+ - National Taiwan University, BS in Civil Engineering (2018)
 ---
 
 
