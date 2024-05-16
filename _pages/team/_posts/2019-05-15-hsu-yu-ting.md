@@ -29,3 +29,11 @@ Board of Directors, Chinese Institute of Transportation, Taiwan (2023-present)
 Deputy Vice President of Student Affairs, National Taiwan University (2021-2023)
 Associate Editor, IATSS Research (-present)
 
+<h3>Award</h3>
+Excellence in Teaching Award, National Taiwan University (2023)
+Award for Teaching Excellence in English, National Taiwan University (2022)
+Excellence in Teaching Award, National Taiwan University (2021)
+Outstanding Teacher in Service Learning Award, National Taiwan University (2020)
+Outstanding Teaching Faculty, National Taiwan University (2018)
+
+
