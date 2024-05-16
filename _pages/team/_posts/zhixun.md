@@ -1,0 +1,23 @@
+---
+layout: member
+category: alumni-master
+title: Zhi-Xun Xu
+image: R06_智勛.jpg
+role: PhD@UT Austin
+permalink: 'team/zhixun'
+social:
+    email: mailto:zhixunxu@utexas.edu
+    twitter: 
+    linkedin: https://www.linkedin.com/in/zhixun-xu-04b48220b/
+    google-scholar: https://scholar.google.com/citations?hl=en&user=ho_1HwkAAAAJ
+    github: 
+    website: 
+    orcid: https://orcid.org/0000-0002-4969-3472
+    research-gate: 
+education:
+ - University of Texas at Austin, PhD in ChemE (2024-)
+ - National Taiwan University, MS in Transportation Engineering (2019)
+ - National Taiwan University, BS in Math (2017)
+---
+<h3>Bio</h3>
+Focus on molecular simulations for sustainable applications, especially in water harvesting and carbon capture from the air
