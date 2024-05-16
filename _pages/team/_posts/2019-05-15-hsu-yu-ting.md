@@ -23,3 +23,9 @@ education:
 
 <h3>Bio</h3>
 I am a associate professor at National Taiwan University. I live in Luzhou and my dream is to buy a mansion in Taipei.
+
+<h3>Service</h3>
+Board of Directors, Chinese Institute of Transportation, Taiwan (2023-present)
+Deputy Vice President of Student Affairs, National Taiwan University (2021-2023)
+Associate Editor, IATSS Research (-present)
+
