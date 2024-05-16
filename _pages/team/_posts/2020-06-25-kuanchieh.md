@@ -12,7 +12,7 @@ social:
     google-scholar: 
     github: 
     website: 
-    orcid: https: 
+    orcid:
     research-gate: 
 education:
  - National Taiwan University, MS in Transportation Engineering (2020)
