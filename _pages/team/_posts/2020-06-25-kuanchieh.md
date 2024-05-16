@@ -2,7 +2,7 @@
 layout: member
 category: alumni-master
 title: Kuan-Chieh Lee
-image: IMG_0627.jpeg
+image: IMG_0267.jpeg
 role: Engineer@SEC
 permalink: 'team/kuanchieh'
 social:
