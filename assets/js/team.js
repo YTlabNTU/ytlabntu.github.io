@@ -1,3 +1,5 @@
+console.log("Hello, world!")
+
 document.querySelectorAll('.media.mb-5').forEach(item => {
     item.addEventListener('mouseover', event => {
         event.currentTarget.querySelector('img').style.filter = 'none';
