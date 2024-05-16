@@ -12,8 +12,8 @@ social:
     google-scholar: 
     github: 
     website: 
-    orcid: https://orcid.org/my-orcid?orcid=0009-0004-3049-0474
-    research-gate: https://www.researchgate.net/profile/Chi-Ya-Chou-2
+    orcid: https: 
+    research-gate: 
 education:
  - National Taiwan University, MS in Transportation Engineering (2020)
  - National Taiwan University, BS in Mechnical Engineering (2018)
