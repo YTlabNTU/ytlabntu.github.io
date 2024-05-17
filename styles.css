@@ -1,5 +1,3 @@
-
-
 body {
     font-family: Arial, sans-serif;
 }
@@ -18,21 +16,19 @@ img {
     vertical-align: middle;
 }
 
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 5s;
-    animation-name: fade;
-    animation-duration: 5s;
+.slide {
+    animation-name: slide;
+    animation-duration: 1s;
 }
 
-@-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+/* Slide Animation */
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 .prev, .next {
