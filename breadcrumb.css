@@ -7,4 +7,7 @@
     font-family: inherit; /* Use the same font-family as other items */
     font-size: inherit; /* Use the same font-size as other items */
     font-weight: inherit; /* Use the same font-weight as other items */
+    line-height: inherit; /* Ensure line-height is consistent */
+    text-transform: inherit; /* Ensure text transformation is consistent */
+    vertical-align: middle; /* Align vertically with other items */
 }
