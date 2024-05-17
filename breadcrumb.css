@@ -1,0 +1,7 @@
+.breadcrumb-item.active {
+    background-color: transparent !important; /* Ensure no background color */
+    color: inherit; /* Maintain the inherited text color */
+    padding: 0; /* Adjust padding if necessary */
+    border: none; /* Remove any border if it exists */
+    box-shadow: none; /* Remove any box-shadow */
+}
