@@ -5,8 +5,8 @@ body {
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    max-width: 800px; /* Set the maximum width of the slideshow container */
-    max-height: 650px; /* Set the maximum height of the slideshow container */
+    width: 800px; /* Set the fixed width of the slideshow container */
+    height: 600px; /* Set the fixed height of the slideshow container */
     margin: auto;
     overflow: hidden; /* Hide overflow to prevent photo dimensions from affecting container size */
 }
