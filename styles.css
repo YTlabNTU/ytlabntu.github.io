@@ -21,7 +21,7 @@ body {
     max-width: 100%; /* Ensure the image fits within the width of the container */
     max-height: 100%; /* Ensure the image fits within the height of the container */
     width: auto;
-    height: auto;
+    height: 100%;
     object-fit: contain; /* Ensure the entire image fits within the container without distortion */
 }
 
