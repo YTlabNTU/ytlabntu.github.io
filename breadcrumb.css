@@ -1,3 +1,25 @@
+/* Breadcrumb container */
+.breadcrumb {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding-left: 0; /* Adjust as needed */
+    margin-bottom: 1rem; /* Adjust as needed */
+    background-color: #e9ecef; /* Adjust as needed */
+    border-radius: .25rem; /* Adjust as needed */
+}
+
+/* Breadcrumb item */
+.breadcrumb-item {
+    display: flex;
+    align-items: center; /* Center individual items vertically */
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    text-transform: inherit;
+}
+
+/* Active breadcrumb item */
 .breadcrumb-item.active {
     background-color: transparent !important; /* Ensure no background color */
     color: inherit; /* Maintain the inherited text color */
