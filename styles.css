@@ -36,9 +36,9 @@ body {
     cursor: pointer;
     position: absolute;
     top: 50%;
+    transform: translateY(-50%); /* Center the buttons vertically */
     width: auto;
     padding: 16px;
-    margin-top: -22px;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -48,9 +48,14 @@ body {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better visibility */
 }
 
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 0 3px 3px 0;
 }
 
 .prev:hover, .next:hover {
