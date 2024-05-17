@@ -16,8 +16,17 @@ body {
 /* Make images responsive inside slides */
 .mySlides img {
     max-width: 100%; /* Ensure the image fits within the width of the container */
-    max-height: 100%; /* Ensure the image fits within the height of the container */
+    max-height: 578px; /* Set the maximum height for vertical photos */
+    width: auto;
+    height: auto;
     object-fit: contain; /* Ensure the entire image fits within the container without distortion */
+}
+
+/* Additional styling for vertical photos */
+.mySlides img.portrait {
+    max-width: none; /* Remove the max-width constraint */
+    height: 578px; /* Set the height for vertical photos */
+    width: auto; /* Allow the width to adjust proportionally */
 }
 
 /* Adjust image display based on aspect ratio */
@@ -26,10 +35,6 @@ body {
     height: auto;
 }
 
-.mySlides img.portrait {
-    width: auto;
-    height: 100%;
-}
 
 /* Navigation buttons */
 .prev, .next {
