@@ -1,6 +1,18 @@
 let slideIndex = 0;
 showSlides();
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.mySlides img').forEach(img => {
+        img.onload = function() {
+            if (img.naturalWidth > img.naturalHeight) {
+                img.classList.add('landscape');
+            } else {
+                img.classList.add('portrait');
+            }
+        }
+    });
+});
+
 function showSlides() {
     let i;
     let slides = document.getElementsByClassName("mySlides");
