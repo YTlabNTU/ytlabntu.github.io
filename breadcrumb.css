@@ -1,7 +1,10 @@
 .breadcrumb-item.active {
     background-color: transparent !important; /* Ensure no background color */
     color: inherit; /* Maintain the inherited text color */
-    padding: 0; /* Adjust padding if necessary */
+    padding: 0.75rem; /* Adjust padding to match other items */
     border: none; /* Remove any border if it exists */
     box-shadow: none; /* Remove any box-shadow */
+    font-family: inherit; /* Use the same font-family as other items */
+    font-size: inherit; /* Use the same font-size as other items */
+    font-weight: inherit; /* Use the same font-weight as other items */
 }
