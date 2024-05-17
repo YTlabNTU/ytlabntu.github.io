@@ -2,35 +2,26 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Slideshow container */
 .slideshow-container {
     position: relative;
-    max-width: 1000px;
+    max-width: 800px; /* Set the maximum width of the slideshow */
     margin: auto;
+    overflow: hidden; /* Hide overflow to prevent photo dimensions from affecting container size */
 }
 
+/* Slides */
 .mySlides {
     display: none;
 }
 
-img {
-    vertical-align: middle;
+/* Make images responsive inside slides */
+.mySlides img {
+    width: 100%;
+    height: auto;
 }
 
-.slide {
-    animation-name: slide;
-    animation-duration: 1s;
-}
-
-/* Slide Animation */
-@keyframes slide {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
+/* Navigation buttons */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -41,9 +32,10 @@ img {
     color: white;
     font-weight: bold;
     font-size: 18px;
-    transition: 0.2s ease;
+    transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better visibility */
 }
 
 .next {
@@ -52,8 +44,9 @@ img {
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background color on hover */
 }
+
 
 .dot {
     cursor: pointer;
