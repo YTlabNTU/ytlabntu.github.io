@@ -18,8 +18,10 @@ body {
 /* Make images responsive inside slides */
 .mySlides img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain; /* Ensure the entire image fits within the container while preserving aspect ratio */
 }
+
 
 /* Navigation buttons */
 .prev, .next {
