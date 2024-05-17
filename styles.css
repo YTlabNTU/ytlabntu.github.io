@@ -45,7 +45,7 @@ img {
     color: white;
     font-weight: bold;
     font-size: 18px;
-    transition: 3s ease;
+    transition: 0.2s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
@@ -67,7 +67,7 @@ img {
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 3s ease;
+    transition: background-color 0.2s ease;
 }
 
 .active, .dot:hover {
