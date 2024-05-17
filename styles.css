@@ -5,8 +5,8 @@ body {
 /* Container for the slideshow */
 .mySlides {
     position: relative;
-    width: 100%; /* Full width */
-    height: 70%; /* Full height */
+    width: 770px; /* Full width */
+    height: 578px; /* Full height */
     overflow: hidden; /* Hide any overflow */
     display: flex;
     align-items: center;
