@@ -20,9 +20,9 @@ img {
 
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 0s;
+    -webkit-animation-duration: 5s;
     animation-name: fade;
-    animation-duration: 0s;
+    animation-duration: 5s;
 }
 
 @-webkit-keyframes fade {
