@@ -6,7 +6,7 @@ layout: default
     <ol class="breadcrumb bg-white px-0">
         <li class="breadcrumb-item"><a href="/team">Team</a></li>
         <li class="breadcrumb-item text-capitalize"><a href="/team#{{ page.category }}">{{ page.category }}</a></li>
-        <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+        <li class="breadcrumb-item active" aria-current="page">{{ page.title }} {{ page.chtitle }}</li>
     </ol>
 </nav>
 
@@ -17,6 +17,7 @@ layout: default
 
     <!-- Name & Role -->
     <p><h1>{{ page.title }}</h1></p>
+    <p><h2>{{ page.chtitle }}</h2></p>
     <p><h3>{{ page.role }}</h3></p>
 
     <!-- Social -->
