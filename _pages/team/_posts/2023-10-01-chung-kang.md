@@ -2,6 +2,7 @@
 layout: member
 category: alumni-master
 title: Chung-Kang Hsiao
+chtitle: 蕭仲綱
 image: Chung-Kang.jpeg
 role: Engineer@HwaCom
 permalink: 'team/chung-kang'
