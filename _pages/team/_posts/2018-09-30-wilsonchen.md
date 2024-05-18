@@ -2,6 +2,7 @@
 layout: member
 category: phd-student
 title: Wei-Hsun Chen
+chtitle: 陳威勳
 image: d10_威勳.JPG
 role: PhD Student
 permalink: 'team/wilsonchen'
