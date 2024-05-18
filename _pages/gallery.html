@@ -66,6 +66,15 @@ permalink: /gallery/
             }
             slides[slideIndex].style.display = 'flex';
         }
+
+                // Function to advance the slides automatically
+        function autoAdvanceSlides() {
+            slideIndex++;
+            showSlides(slideIndex);
+        }
+
+        // Set an interval to advance slides every 3 seconds
+        setInterval(autoAdvanceSlides, 3000);
     </script>
 </body>
 </html>
