@@ -2,6 +2,7 @@
 layout: member
 category: staff
 title: 'Hsin-Kai Huang'
+chtitle: 黃信凱
 image: 'detective.png'
 role: Research Assistant
 permalink: 'team/detective'
