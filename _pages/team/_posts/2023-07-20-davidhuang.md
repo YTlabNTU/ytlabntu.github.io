@@ -2,6 +2,7 @@
 layout: member
 category: alumni-master
 title: Yu-Wei Huang
+chtitle: 黃昱瑋
 image: r09_昱瑋.JPG
 role: Exchage Student@RUAS
 permalink: 'team/davidhuang'
