@@ -2,6 +2,7 @@
 layout: member
 category: master-student
 title: Yu-Cyuan Jhong
+chtitle: 鍾淯全
 image: R12_淯全.jpg
 role: Master Student
 permalink: 'team/papercitymayor'
