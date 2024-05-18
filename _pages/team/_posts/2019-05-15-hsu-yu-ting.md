@@ -22,7 +22,7 @@ education:
 ---
 
 <h3>Bio</h3>
-I am an associate professor in the [Department of Civil Engineering](https://www.ce.ntu.edu.tw) at National Taiwan University. I live in Luzhou and my dream is to buy a mansion in Taipei.
+I am an associate professor in the [Department of Civil Engineering](https://www.ce.ntu.edu.tw) at National Taiwan University.
 
 <h3>Service</h3>
 <p>Board of Directors, Chinese Institute of Transportation, Taiwan (2023-present)</p>
