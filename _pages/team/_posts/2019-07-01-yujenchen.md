@@ -2,6 +2,7 @@
 layout: member
 category: alumni-master
 title: Yu-Jen Chen
+chtitle: 陳譽仁
 image: R06_譽仁.jpg
 role: Engineer@CECI
 permalink: 'team/yujenchen'
