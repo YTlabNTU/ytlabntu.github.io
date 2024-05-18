@@ -1,40 +1,32 @@
-body {
-    font-family: Arial, sans-serif;
-}
-
 /* Container for the slideshow */
-.mySlides {
+.slideshow-container {
     position: relative;
-    width: 770px; /* Full width */
-    height: 578px; /* Full height */
-    overflow: hidden; /* Hide any overflow */
+    width: 770px; /* Fixed width */
+    height: 578px; /* Fixed height */
+    margin: auto;
+    overflow: hidden; /* Hide overflow */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Slides */
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Make images responsive inside slides */
 .mySlides img {
     max-width: 100%; /* Ensure the image fits within the width of the container */
-    max-height: 578px; /* Set the maximum height for vertical photos */
+    max-height: 100%; /* Ensure the image fits within the height of the container */
     width: auto;
     height: auto;
     object-fit: contain; /* Ensure the entire image fits within the container without distortion */
 }
-
-/* Additional styling for vertical photos */
-.mySlides img.portrait {
-    max-width: none; /* Remove the max-width constraint */
-    height: 578px; /* Set the height for vertical photos */
-    width: auto; /* Allow the width to adjust proportionally */
-}
-
-/* Adjust image display based on aspect ratio */
-.mySlides img.landscape {
-    width: 100%;
-    height: auto;
-}
-
 
 /* Navigation buttons */
 .prev, .next {
@@ -53,32 +45,16 @@ body {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better visibility */
 }
 
-.prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-}
-
 .next {
     right: 0;
-    border-radius: 0 3px 3px 0;
+    border-radius: 3px 0 0 3px;
 }
 
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8); /* Darker background color on hover */
 }
 
-
+/* Remove dots (indicators) */
 .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.2s ease;
-}
-
-.active, .dot:hover {
-    background-color: #717171;
+    display: none;
 }
