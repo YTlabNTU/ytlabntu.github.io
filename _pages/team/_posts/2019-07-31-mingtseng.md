@@ -2,6 +2,7 @@
 layout: member
 category: alumni-master
 title: Ming-Yi Tseng
+chtitle: 曾明儀
 image: r06_明儀.jpg
 role: RD Engineer@WeBIM Services
 permalink: 'team/mingtseng'
