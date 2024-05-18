@@ -2,6 +2,7 @@
 layout: member
 category: alumni-master
 title: Hung-Yi Hsueh
+chtitle: 薛宏毅
 image: R09_宏毅.JPG
 role: Engineer@SEC
 permalink: 'team/hungyihseuh'
