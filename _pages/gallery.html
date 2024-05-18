@@ -6,93 +6,68 @@ layout: page
 permalink: /gallery/
 ---
 <!DOCTYPE html>
-<!-- <body> -->
-<div class="slideshow-container">
-    <div class="mySlides slide">
-        <img src="/assets/images/gallery/ytdinner_16.jpeg" alt="Slide 1">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="slideshow-container" id="slideshow-container">
+        <!-- Slides will be dynamically inserted here -->
     </div>
-    <div class="mySlides slide">
-        <img src="/assets/images/gallery/ytdinner_15.jpeg" alt="Slide 2">
-    </div>
-    <div class="mySlides slide">
-        <img src="/assets/images/gallery/ytdinner_14.jpeg" alt="Slide 3">
-    </div>
-    <div class="mySlides slide">
-        <img src="/assets/images/gallery/ytdinner_13.jpeg" alt="Slide 4">
-    </div>
-    <div class="mySlides slide">
-        <img src="/assets/images/gallery/ytdinner_12.jpeg" alt="Slide 5">
-    </div>
-    <div class="mySlides slide">
-        <img src="/assets/images/gallery/ytdinner_11.jpeg" alt="Slide 6">
-    </div>
-    <div class="mySlides slide">
-        <img src="/assets/images/gallery/ytdinner_10.jpeg" alt="Slide 7">
-    </div>
-    <div class="mySlides slide">
-        <img src="/assets/images/gallery/ytdinner_9.jpeg" salt="Slide 8">
-    </div>
-    <div class="mySlides slide">
-        <img src="/assets/images/gallery/ytdinner_8.jpeg" alt="Slide 9">
-    </div>
-    <div class="mySlides slide">
-        <img src="/assets/images/gallery/ytdinner_7.jpeg" alt="Slide 10">
-    </div>
-    <div class="mySlides slide">
-        <img src="/assets/images/gallery/ytdinner_6.jpeg" alt="Slide 11">
-    </div>
-    <div class="mySlides slide">
-        <img src="/assets/images/gallery/ytdinner_5.jpeg" alt="Slide 12">
-    </div>
-    <div class="mySlides slide">
-        <img src="/assets/images/gallery/ytdinner_4.jpeg" alt="Slide 13">
-    </div>
-    <div class="mySlides slide">
-        <img src="/assets/images/gallery/ytdinner_3.jpeg" alt="Slide 14">
-    </div>
-    <div class="mySlides slide">
-        <img src="/assets/images/gallery/ytdinner_2.jpeg" alt="Slide 15">
-    </div>
-    <div class="mySlides slide">
-        <img src="/assets/images/gallery/ytdinner_1.jpeg" alt="Slide 16">
-    </div>
-<!--     <div class="mySlides slide">
-        <img src="/assets/images/TRB23-1.jpeg" style="width:100%">
-    </div>
-    <div class="mySlides slide">
-        <img src="/assets/images/TRB23-2.jpeg" style="width:100%">
-    </div>
-    <div class="mySlides slide">
-        <img src="/assets/images/EAST23-1.jpeg" style="width:100%">
-    </div> -->
-    <!-- Add more images as needed -->
-
+    <!-- Navigation buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-<div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
-    <span class="dot" onclick="currentSlide(4)"></span> 
-    <span class="dot" onclick="currentSlide(5)"></span> 
-    <span class="dot" onclick="currentSlide(6)"></span> 
-    <span class="dot" onclick="currentSlide(7)"></span> 
-    <span class="dot" onclick="currentSlide(8)"></span> 
-    <span class="dot" onclick="currentSlide(9)"></span> 
-    <span class="dot" onclick="currentSlide(10)"></span> 
-    <span class="dot" onclick="currentSlide(11)"></span> 
-    <span class="dot" onclick="currentSlide(12)"></span> 
-    <span class="dot" onclick="currentSlide(13)"></span> 
-    <span class="dot" onclick="currentSlide(14)"></span> 
-    <span class="dot" onclick="currentSlide(15)"></span> 
-    <span class="dot" onclick="currentSlide(16)"></span> 
-<!--     <span class="dot" onclick="currentSlide(17)"></span> 
-    <span class="dot" onclick="currentSlide(18)"></span>
-    <span class="dot" onclick="currentSlide(19)"></span> -->
-</div>
+    
+    <script>
+        // Function to generate unique random numbers
+        function generateRandomNumbers(total, count) {
+            let numbers = new Set();
+            while (numbers.size < count) {
+                numbers.add(Math.floor(Math.random() * total) + 1);
+            }
+            return Array.from(numbers);
+        }
 
-<script src="/assets/js/gallery.js"></script>
-<!-- </body> -->
+        // Total images and number of images to display
+        const totalImages = 52;
+        const displayImages = 40;
+        const randomNumbers = generateRandomNumbers(totalImages, displayImages);
+
+        const container = document.getElementById('slideshow-container');
+        
+        randomNumbers.forEach(num => {
+            const slide = document.createElement('div');
+            slide.classList.add('mySlides');
+            
+            const img = document.createElement('img');
+            img.src = `assets/images/gallery/image${num}.jpeg`; // Adjust the path and naming as needed
+            img.alt = `Slide ${num}`;
+            
+            slide.appendChild(img);
+            container.appendChild(slide);
+        });
+
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            const slides = document.getElementsByClassName('mySlides');
+            if (n >= slides.length) { slideIndex = 0; }
+            if (n < 0) { slideIndex = slides.length - 1; }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slides[slideIndex].style.display = 'flex';
+        }
+    </script>
+</body>
 </html>
+
+
