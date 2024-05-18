@@ -21,8 +21,8 @@
 
 /* Make images responsive inside slides */
 .mySlides img {
-    max-width: 100%; /* Ensure the image fits within the width of the container */
-    max-height: 100%; /* Ensure the image fits within the height of the container */
+    max-width: 100%;
+    max-height: 100%;
     width: auto;
     height: auto;
     object-fit: contain; /* Ensure the entire image fits within the container without distortion */
@@ -40,14 +40,19 @@
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
     user-select: none;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better visibility */
+    z-index: 1; /* Ensure buttons are above the slides */
 }
 
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
 }
 
 .prev:hover, .next:hover {
