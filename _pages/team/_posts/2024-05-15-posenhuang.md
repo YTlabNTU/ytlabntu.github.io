@@ -3,7 +3,7 @@ layout: member
 category: master-student
 title: Po-Sen Huang
 chtitle: 黃柏森
-image: R12_柏森.jpg
+image: R12_柏森.jpeg
 role: Master Student
 permalink: 'team/posen'
 social:
