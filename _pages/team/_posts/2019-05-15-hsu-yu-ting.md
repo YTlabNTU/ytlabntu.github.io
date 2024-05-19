@@ -23,7 +23,7 @@ education:
 ---
 
 <h3>Bio</h3>
-I am an associate professor in the [Department of Civil Engineering](https://www.ce.ntu.edu.tw) at National Taiwan University.
+I am an associate professor in the [Department of Civil Engineering](https://www.ce.ntu.edu.tw) at National Taiwan University (NTU).
 
 <h3>Service</h3>
 <p>Board of Directors, Chinese Institute of Transportation, Taiwan (2023-present)</p>
