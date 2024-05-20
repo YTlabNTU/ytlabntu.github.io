@@ -1,7 +1,6 @@
 ---
 title: Gallery
 description: Memories of Prof. Yu-Ting Hsu's Lab
-<!-- keywords: Yu-Ting Hsu, NTU, NTUCE, National Taiwan University, Civil Engineering, Transportation Engineering -->
 layout: page
 permalink: /gallery/
 ---
@@ -33,7 +32,7 @@ permalink: /gallery/
 
         // Total images and number of images to display
         const totalImages = 79;
-        const displayImages = 79;
+        const displayImages = 40;
         const randomNumbers = generateRandomNumbers(totalImages, displayImages);
 
         const container = document.getElementById('slideshow-container');
@@ -51,11 +50,8 @@ permalink: /gallery/
         });
 
         let slideIndex = 0;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+        let isPaused = false;
+        let slideInterval;
 
         function showSlides(n) {
             const slides = document.getElementsByClassName('mySlides');
@@ -67,16 +63,25 @@ permalink: /gallery/
             slides[slideIndex].style.display = 'flex';
         }
 
-                // Function to advance the slides automatically
-        function autoAdvanceSlides() {
-            slideIndex++;
-            showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
         }
 
-        // Set an interval to advance slides every 3 seconds
-        setInterval(autoAdvanceSlides, 3000);
+        function autoAdvanceSlides() {
+            if (!isPaused) {
+                slideIndex++;
+                showSlides(slideIndex);
+            }
+        }
+
+        function togglePause() {
+            isPaused = !isPaused;
+        }
+
+        document.getElementById('slideshow-container').addEventListener('click', togglePause);
+
+        slideInterval = setInterval(autoAdvanceSlides, 3000);
+        showSlides(slideIndex);
     </script>
 </body>
 </html>
-
-
