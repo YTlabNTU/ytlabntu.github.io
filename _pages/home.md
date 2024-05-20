@@ -10,7 +10,7 @@ permalink: /
 
 <ul>
   <li>
-    <a href="/projects##Traveler Behavior">Traveler Behavior</a>
+    <a href="/traveler-behavior.md">Traveler Behavior</a>
     <p>We apply advanced data analytics and behavioral psychology principles to understand how individuals make travel decisions, allowing us to design more efficient and user-centric transportation solutions.</p>
   </li>
   <li>
