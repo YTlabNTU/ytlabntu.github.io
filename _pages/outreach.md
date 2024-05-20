@@ -12,4 +12,4 @@ permalink: /outreach/
 <img align="center" width="706" height="1019" src="/assets/images/activities-2023.jpeg" style="vertical-align: middle; margin: 20px 20px;">
 
 ## 110學年度高中職生運輸深耕競賽活動
-<img align="center" width="706" height="1019" src="/assets/images/activities-2022.jpeg" style="vertical-align: middle; margin: 20px 20px;">
+<img align="center" width="706" height="1019" src="/assets/images/activities-2022.jpg" style="vertical-align: middle; margin: 20px 20px;">
