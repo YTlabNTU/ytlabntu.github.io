@@ -1,7 +1,7 @@
 ---
-title: Travler Behavior
+title: Traveler Behavior
 layout: page
-permanlink: /traveler-behavior/
+permalink: /traveler-behavior/
 ---
 
 <ul>
