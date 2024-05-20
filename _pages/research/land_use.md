@@ -1,7 +1,7 @@
 ---
 title: Transportation and Land Use
 layout: page
-permalink: /landuse/
+permalink: /land-use/
 ---
 
 <ul>
