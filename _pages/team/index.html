@@ -113,6 +113,23 @@ permalink: /team/
 
 <!-- Alumni -->
 <h3 class="mb-3"><a id="alumni"></a>Alumni</h3>
+<h4 class="mb-3"><a id="Former Distinguished Members"></a>Former Distinguished Members</h4>
+
+{% assign members = site.posts | where: 'category', 'alumni-distinguished' | sort: 'date' %}
+<ul class="list-unstyled">
+<div class="row">
+{% for member in members%}
+    {% assign ncols = 2 %}
+    {% assign i = forloop.index0 | modulo: ncols %}
+        <div class="col">
+            {%- include team_member.html -%}
+        </div>
+    {% if i == 1 %}
+        </div><div class="row">
+    {% endif %}
+{% endfor %}
+</ul>
+
 <h4 class="mb-3"><a id="Former Master Students"></a>Former Master Students</h4>
 
 {% assign members = site.posts | where: 'category', 'alumni-master' | sort: 'date' %}
