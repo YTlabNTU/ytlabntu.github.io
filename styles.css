@@ -166,7 +166,7 @@ body.dark-mode .nav-link:hover {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
+/*     align-items: center; */
 }
 
 .site-header {
