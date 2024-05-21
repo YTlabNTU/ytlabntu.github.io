@@ -133,6 +133,7 @@ body.dark-mode nav[aria-label="breadcrumb"] ol.breadcrumb {
 
 body.dark-mode .navbar {
     background-color: black; /* Background color for dark mode */
+    color: white;
 }
 
 #darkModeToggle {
@@ -148,9 +149,9 @@ body.dark-mode .navbar {
 }
 
 /* Navbar styles */
-.navbar {
+/* .navbar {
     background-color: #f8f9fa;
-}
+} */
 
 .navbar-brand {
     margin-right: auto;
