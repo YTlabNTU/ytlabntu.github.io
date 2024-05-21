@@ -115,11 +115,27 @@ body.dark-mode .nav-link:hover {
     background-color: #555;
 }
 
-/* breadcrumb-time */
+/* breadcrumb-item */
+body.dark-mode nav[aria-label="breadcrumb"] {
+    background-color: black;
+    color: white;
+}
+
 body.dark-mode .breadcrumb-item {
     background-color: black;
     color: white;
 }
+
+body.dark-mode .breadcrumb-item.text-capitalize {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode .breadcrumb-item.active {
+    background-color: black;
+    color: white;
+}
+/* breadcrumb-item end*/
 
 #darkModeToggle {
     border: none;
