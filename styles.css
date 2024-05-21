@@ -124,27 +124,19 @@ body.dark-mode nav[aria-label="breadcrumb"] {
 body.dark-mode nav[aria-label="breadcrumb"] ol.breadcrumb {
     background-color: black !important;
 }
-
-/* body.dark-mode .breadcrumb.bg-white.px-0 {
-    background-color: black;
-    color: white;
-}
-
-body.dark-mode .breadcrumb-item {
-    background-color: black;
-    color: white;
-}
-
-body.dark-mode .breadcrumb-item.text-capitalize {
-    background-color: black;
-    color: white;
-}
-
-body.dark-mode .breadcrumb-item.active {
-    background-color: black;
-    color: white;
-} */
 /* breadcrumb-item end*/
+
+/* Dark mode header */
+body.dark-mode .site-header {
+    background-color: black;
+    color: white;
+}
+
+/* Light mode header */
+.site-header {
+    background-color: white;
+    color: black;
+}
 
 #darkModeToggle {
     border: none;
