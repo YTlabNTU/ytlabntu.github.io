@@ -121,6 +121,20 @@ body.dark-mode nav[aria-label="breadcrumb"] {
     color: black;
 }
 
+body.dark-mode nav[aria-label="breadcrumb"] ol.breadcrumb {
+    background-color: black;
+}
+
+body.dark-mode nav[aria-label="breadcrumb"] ol.breadcrumb .breadcrumb-item {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode nav[aria-label="breadcrumb"] ol.breadcrumb .breadcrumb-item.active {
+    background-color: black;
+    color: white;
+}
+
 /* body.dark-mode .breadcrumb.bg-white.px-0 {
     background-color: black;
     color: white;
