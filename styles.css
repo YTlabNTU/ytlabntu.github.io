@@ -118,7 +118,7 @@ body.dark-mode img {
 /* Navbar styles */
 .navbar {
     width: 100%;
-    padding: 1rem;
+/*     padding: 1rem; */
     background-color: #f8f9fa;
 }
 
