@@ -103,6 +103,18 @@ body.dark-mode img {
     filter: brightness(0.9);
 }
 
+body.dark-mode .navbar {
+    background-color: #333;
+}
+
+body.dark-mode .nav-link {
+    color: white;
+}
+
+body.dark-mode .nav-link:hover {
+    background-color: #555;
+}
+
 #darkModeToggle {
     border: none;
     background: none;
@@ -116,9 +128,9 @@ body.dark-mode img {
 }
 
 /* Navbar styles */
-/* .navbar {
+.navbar {
     background-color: #f8f9fa;
-} */
+}
 
 .navbar-brand {
     margin-right: auto;
@@ -134,7 +146,7 @@ body.dark-mode img {
 }
 
 .nav-link {
-/*     color: #000; */
+    color: #000;
     text-decoration: none;
     padding: 8px 16px;
     display: block;
@@ -150,11 +162,11 @@ body.dark-mode img {
     width: 100%;
     max-width: 1000px; /* Adjust this as needed */
     margin: 0 auto;
-/*     padding: 15px; */
+    padding: 15px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-/*     align-items: center; */
+    align-items: center;
 }
 
 .site-header {
