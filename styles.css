@@ -134,7 +134,7 @@ body.dark-mode img {
 }
 
 .nav-link {
-    color: #000;
+/*     color: #000; */
     text-decoration: none;
     padding: 8px 16px;
     display: block;
