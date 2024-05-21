@@ -3,6 +3,11 @@
         <!-- Navbar brand -->
         <a class="navbar-brand" href="/">{{ site.title }}</a>
 
+        <!-- Move the dark mode toggle button outside of the collapse div -->
+        <button id="darkModeToggle" class="btn btn-link nav-link d-sm-none d-md-block">
+            <i class="fas fa-moon" style="font-size: 15px;"></i>
+        </button>
+
         <!-- Navbar toggler button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
             aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,9 +37,6 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/gallery">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <button id="darkModeToggle" class="btn btn-link nav-link"><i class="fas fa-moon" style="font-size: 15px;"></i></button>
                 </li>
             </ul>
         </div>
