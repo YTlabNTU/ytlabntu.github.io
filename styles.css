@@ -117,22 +117,8 @@ body.dark-mode .nav-link:hover {
 
 /* breadcrumb-item */
 body.dark-mode nav[aria-label="breadcrumb"] {
-    background-color: black;
-    color: black;
-}
-
-body.dark-mode nav[aria-label="breadcrumb"] ol.breadcrumb {
-    background-color: black;
-}
-
-body.dark-mode nav[aria-label="breadcrumb"] ol.breadcrumb .breadcrumb-item {
-    background-color: black;
-    color: white;
-}
-
-body.dark-mode nav[aria-label="breadcrumb"] ol.breadcrumb .breadcrumb-item.active {
-    background-color: black;
-    color: white;
+    background-color: black !important;
+    color: white !important; /* Assuming you want the text to be white */
 }
 
 /* body.dark-mode .breadcrumb.bg-white.px-0 {
