@@ -150,11 +150,11 @@ body.dark-mode img {
     width: 100%;
     max-width: 1000px; /* Adjust this as needed */
     margin: 0 auto;
-    padding: 15px;
+/*     padding: 15px; */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
+/*     align-items: center; */
 }
 
 .site-header {
