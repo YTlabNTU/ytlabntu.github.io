@@ -168,33 +168,3 @@ p {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #121212;
-    color: white;
-}
-
-body.dark-mode a {
-    color: #90caf9;
-}
-
-body.dark-mode header, 
-body.dark-mode footer {
-    background-color: #333;
-}
-
-body.dark-mode .slideshow-container {
-    background-color: #333;
-}
-
-body.dark-mode .prev, 
-body.dark-mode .next {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: black;
-}
-
-body.dark-mode .prev:hover, 
-body.dark-mode .next:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
