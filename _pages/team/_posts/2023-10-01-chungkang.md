@@ -7,7 +7,7 @@ image: Chung-Kang.jpeg
 role: Engineer@HwaCom
 permalink: 'team/chung-kang'
 social:
-    email:
+    email: mailto:r10521525@ntu.edu.tw
     twitter: 
     linkedin: https://www.linkedin.com/in/chung-kang-hsiao-395600268/
     google-scholar: 
