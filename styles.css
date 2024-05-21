@@ -1,21 +1,30 @@
-/* Default Light Mode Styles */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
 body {
     background-color: white;
     color: black;
+    font-family: Arial, sans-serif;
 }
 
-/* Common Styles */
+/* Container for the slideshow (gallery page specific) */
 .slideshow-container {
     position: relative;
-    width: 770px; /* Fixed width */
-    height: 578px; /* Fixed height */
+    width: 770px;
+    height: 578px;
     margin: auto;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Slides */
 .mySlides {
     display: none;
     width: 100%;
@@ -30,7 +39,7 @@ body {
     max-height: 100%;
     width: auto;
     height: auto;
-    object-fit: contain; /* Ensure the entire image fits within the container without distortion */
+    object-fit: contain;
 }
 
 /* Navigation buttons */
@@ -38,7 +47,7 @@ body {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); /* Center the buttons vertically */
+    transform: translateY(-50%);
     width: auto;
     padding: 16px;
     color: white;
@@ -46,8 +55,8 @@ body {
     font-size: 18px;
     transition: 0.6s ease;
     user-select: none;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better visibility */
-    z-index: 1; /* Ensure buttons are above the slides */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .next {
@@ -61,7 +70,7 @@ body {
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Darker background color on hover */
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Remove dots (indicators) */
@@ -90,47 +99,78 @@ body.dark-mode .next:hover {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Ensure other images are not distorted */
 body.dark-mode img {
     filter: brightness(0.9);
 }
 
-/* Ensure the dark mode button blends with the navbar */
 #darkModeToggle {
     border: none;
     background: none;
     cursor: pointer;
     font-size: 18px;
-    color: inherit; /* Inherit the text color from the navbar */
+    color: inherit;
 }
 
 #darkModeToggle i {
     font-size: 24px;
 }
 
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    padding: 1rem;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+}
+
+/* Container-fluid for main content */
 .container-fluid {
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px; /* Optional: adjust as needed */
+    padding: 15px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center contents horizontally */
+    align-items: center;
 }
 
 .site-header {
     width: 100%;
 }
 
-/* Ensure the navbar contents are centered */
-.navbar {
-    width: 100%;
+.navbar-collapse {
+    justify-content: space-between;
 }
 
-.navbar .navbar-collapse {
-    justify-content: space-between; /* Ensure proper spacing */
+.dark-mode .navbar {
+    background-color: #333;
 }
 
-.navbar-brand, .navbar-nav {
-    margin: 0 auto;
+.dark-mode .nav-link {
+    color: white;
 }
