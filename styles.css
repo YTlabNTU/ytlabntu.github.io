@@ -201,3 +201,10 @@ body.dark-mode .navbar .nav-link:hover {
 .site-header {
     width: 100%;
 }
+
+/* set custom-nav-item */
+.custom-nav-item {
+    margin-bottom: 0px; /* Overwrite the margin-bottom property */
+}
+
+
