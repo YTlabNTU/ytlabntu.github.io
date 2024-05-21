@@ -118,7 +118,7 @@ body.dark-mode .nav-link:hover {
 /* breadcrumb-item */
 body.dark-mode nav[aria-label="breadcrumb"] {
     background-color: black;
-    color: white;
+    color: black;
 }
 
 body.dark-mode .breadcrumb.bg-white.px-0 {
