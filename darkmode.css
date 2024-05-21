@@ -105,5 +105,28 @@ body.dark-mode img {
 }
 
 .container-fluid {
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px; /* Optional: adjust as needed */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center contents horizontally */
+}
+
+.site-header {
+    width: 100%;
+}
+
+/* Ensure the navbar contents are centered */
+.navbar {
+    width: 100%;
+}
+
+.navbar .navbar-collapse {
+    justify-content: space-between; /* Ensure proper spacing */
+}
+
+.navbar-brand, .navbar-nav {
+    margin: 0 auto;
 }
