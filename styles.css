@@ -198,24 +198,3 @@ body.dark-mode .next:hover {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Ensure other images are not distorted */
-body.dark-mode img {
-    filter: brightness(0.9);
-}
-
-/* Ensure the dark mode button blends with the navbar */
-#darkModeToggle {
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: 18px;
-    color: inherit; /* Inherit the text color from the navbar */
-}
-
-#darkModeToggle i {
-    font-size: 24px;
-}
-
-.container-fluid {
-    margin: auto;
-}
