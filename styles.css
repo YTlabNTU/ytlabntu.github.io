@@ -124,7 +124,7 @@ body.dark-mode img {
 
 .navbar-brand {
     margin-right: auto;
-    font-weight: bold;
+/*     font-weight: bold; */
 }
 
 .navbar-nav {
@@ -161,6 +161,7 @@ body.dark-mode img {
 
 .site-header {
     width: 100%;
+    max-width: 1000px;
 }
 
 .navbar-collapse {
