@@ -126,16 +126,13 @@ body.dark-mode nav[aria-label="breadcrumb"] ol.breadcrumb {
 }
 /* breadcrumb-item end*/
 
-/* Dark mode header */
-body.dark-mode .site-header {
-    background-color: black !important;
-    color: white !important;
+/* Navbar styles */
+.navbar {
+    background-color: white; /* Default background color for light mode */
 }
 
-/* Light mode header */
-.site-header {
-    background-color: white !important;
-    color: black !important;
+body.dark-mode .navbar {
+    background-color: black; /* Background color for dark mode */
 }
 
 #darkModeToggle {
