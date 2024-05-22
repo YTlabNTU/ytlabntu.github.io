@@ -210,3 +210,14 @@ body.dark-mode .navbar .nav-link:hover {
 .custom-media-body {
     margin-top: 23px;
 }
+
+/* Default color for light mode */
+.moon-icon {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Color for dark mode */
+body.dark-mode .moon-icon {
+    color: white;
+}
+
