@@ -218,6 +218,6 @@ body.dark-mode .navbar .nav-link:hover {
 
 /* Color for dark mode */
 body.dark-mode .moon-icon {
-    color: white;
+    color: white !important;
 }
 
