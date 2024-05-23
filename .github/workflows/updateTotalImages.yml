@@ -21,8 +21,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run update script
-        run: node scripts/updateTotalImages.js
+      - name: Run update script with logging
+        run: |
+          node scripts/updateTotalImages.js
+          ls -la
+          cat updateImages.js || echo "updateImages.js not found"
 
       - name: Commit and push changes
         run: |
