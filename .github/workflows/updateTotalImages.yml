@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Run update script
-        run: node assets/js/updateImages.js
+        run: node scripts/updateTotalImages.js
 
       - name: Commit and push changes
         run: |
