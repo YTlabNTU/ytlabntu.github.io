@@ -45,8 +45,8 @@ body {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 60%;
+    transform: translateY(-60%);
     width: auto;
     padding: 16px;
     color: white;
