@@ -10,8 +10,7 @@ permalink: /gallery/
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slideshow</title>
-    <!-- <link rel="stylesheet" href="/styles.css"> -->
-    <script src="/updateImages.js" defer></script>
+<!--     <link rel="stylesheet" href="/styles.css"> -->
 </head>
 <body>
     <div class="slideshow-container" id="slideshow-container">
@@ -24,74 +23,67 @@ permalink: /gallery/
     <p style="text-align: center;">Click to pause</p>
     
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Function to generate unique random numbers
-            function generateRandomNumbers(total, count) {
-                let numbers = new Set();
-                while (numbers.size < count) {
-                    numbers.add(Math.floor(Math.random() * total) + 1);
-                }
-                return Array.from(numbers);
+        // Function to generate unique random numbers
+        function generateRandomNumbers(total, count) {
+            let numbers = new Set();
+            while (numbers.size < count) {
+                numbers.add(Math.floor(Math.random() * total) + 1);
             }
+            return Array.from(numbers);
+        }
 
-            // Define displayImages here
-            const displayImages = 10;  // You can change this value as needed
+        // Total images and number of images to display
+        const totalImages = 84;
+        const displayImages = 84;
+        const randomNumbers = generateRandomNumbers(totalImages, displayImages);
 
-            // Ensure the totalImages is defined in updateImages.js
-            if (typeof totalImages === 'undefined') {
-                console.error('totalImages is not defined. Make sure updateImages.js is included.');
-                return;
-            }
-
-            const randomNumbers = generateRandomNumbers(totalImages, displayImages);
-            const container = document.getElementById('slideshow-container');
-
-            randomNumbers.forEach(num => {
-                const slide = document.createElement('div');
-                slide.classList.add('mySlides');
-
-                const img = document.createElement('img');
-                img.src = `/assets/images/gallery/image${num}.jpeg`; // Adjust the path and naming as needed
-                img.alt = `Slide ${num}`;
-
-                slide.appendChild(img);
-                container.appendChild(slide);
-            });
-
-            let slideIndex = 0;
-            let isPaused = false;
-            let slideInterval;
-
-            function showSlides(n) {
-                const slides = document.getElementsByClassName('mySlides');
-                if (n >= slides.length) { slideIndex = 0; }
-                if (n < 0) { slideIndex = slides.length - 1; }
-                for (let i = 0; i < slides.length; i++) {
-                    slides[i].style.display = 'none';
-                }
-                slides[slideIndex].style.display = 'flex';
-            }
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function autoAdvanceSlides() {
-                if (!isPaused) {
-                    slideIndex++;
-                    showSlides(slideIndex);
-                }
-            }
-
-            function togglePause() {
-                isPaused = !isPaused;
-            }
-
-            document.getElementById('slideshow-container').addEventListener('click', togglePause);
-
-            slideInterval = setInterval(autoAdvanceSlides, 3000);
-            showSlides(slideIndex);
+        const container = document.getElementById('slideshow-container');
+        
+        randomNumbers.forEach(num => {
+            const slide = document.createElement('div');
+            slide.classList.add('mySlides');
+            
+            const img = document.createElement('img');
+            img.src = `/assets/images/gallery/image${num}.jpeg`; // Adjust the path and naming as needed
+            img.alt = `Slide ${num}`;
+            
+            slide.appendChild(img);
+            container.appendChild(slide);
         });
+
+        let slideIndex = 0;
+        let isPaused = false;
+        let slideInterval;
+
+        function showSlides(n) {
+            const slides = document.getElementsByClassName('mySlides');
+            if (n >= slides.length) { slideIndex = 0; }
+            if (n < 0) { slideIndex = slides.length - 1; }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slides[slideIndex].style.display = 'flex';
+        }
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function autoAdvanceSlides() {
+            if (!isPaused) {
+                slideIndex++;
+                showSlides(slideIndex);
+            }
+        }
+
+        function togglePause() {
+            isPaused = !isPaused;
+        }
+
+        document.getElementById('slideshow-container').addEventListener('click', togglePause);
+
+        slideInterval = setInterval(autoAdvanceSlides, 3000);
+        showSlides(slideIndex);
     </script>
 </body>
 </html>
