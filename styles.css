@@ -203,9 +203,9 @@ body.dark-mode .navbar .nav-link:hover {
 }
 
 /* set custom-nav-item */
-/* .custom-nav-item {
+.custom-nav-item {
     margin-bottom: 0px; 
-} */
+}
 
 .custom-media-body {
     margin-top: 23px;
