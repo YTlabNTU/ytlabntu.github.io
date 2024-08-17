@@ -21,5 +21,5 @@ education:
   - "National Taiwan University, BS in Civil Engineering (2023)"
 ---
 
-<h3>Bio</h3>
+<h3 style="color: #e36414;">Bio</h3>
 Yu-Cyuan is currently the mayor of [Paper City](https://www.youtube.com/@jinger-paper-city). He puts much effort on his own YouTube channel and [Facebook fanpage](https://www.facebook.com/JingerPaperCitySince2010), and also transportation-related researches.
