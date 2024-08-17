@@ -20,5 +20,5 @@ education:
 
 ---
 
-<h3>Bio</h3>
+<h3 style="color: #e36414;">Bio</h3>
 Hsin-Kai loves trains and railway. He has Japanese N0 certification and he got 130 on his TOEFL test.
