@@ -14,12 +14,14 @@ social:
   github: 
   website: 
   orcid: 
+  researchgate: 
+  facebook: 
+  instagram: 
 education:
   - "National Taiwan University, MS in Transportation Engineering (2023)"
   - "National Taiwan University, BS in Forestry (2021)"
 
 ---
 
-<h3 style="color: #e36414;">Bio</h3>
 
 Passionate about basketball and girls (especially aunties).

@@ -14,11 +14,13 @@ social:
   github: 
   website: 
   orcid: 
+  researchgate: 
+  facebook: 
+  instagram: 
 education:
   - "National Taiwan University, MS in Transportation Engineering (2024)"
   - "National Taiwan University, BS in Civil  Engineering(2021)"
 
 ---
 
-<h3 style="color: #e36414;">Bio</h3>
 

@@ -14,12 +14,14 @@ social:
   github: 
   website: 
   orcid: 
+  researchgate: 
+  facebook: 
+  instagram: 
 education:
   - "National Taiwan University, MS in Transportation Engineering (2024)"
   - "National Cheng Kung University, BAA in Transportation Management and Science (2022)"
 
 ---
 
-<h3 style="color: #e36414;">Bio</h3>
 
 Po-Yu loves trains and railway........

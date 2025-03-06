@@ -14,11 +14,13 @@ social:
   github: 
   website: 
   orcid: 
+  researchgate: 
+  facebook: 
+  instagram: https://www.instagram.com/travellertalking/
 education:
   - "National Chiao Tung University, MS in Transportation and Logistics Management (Traffic and Transportation Program) (2018)"
   - "National Chiao Tung University, BS in Transportation and Logistics Management (2015)"
 
 ---
 
-<h3 style="color: #e36414;">Bio</h3>
 

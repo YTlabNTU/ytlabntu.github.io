@@ -14,12 +14,14 @@ social:
   github: 
   website: 
   orcid: https://orcid.org/my-orcid?orcid=0009-0008-6656-3275
+  researchgate: 
+  facebook: 
+  instagram: 
 education:
   - "National Taiwan University, MS in Transportation Engineering (2023)"
   - "National Cheng Kung University, BAA in Transportation Management and Science (2021)"
 
 ---
 
-<h3 style="color: #e36414;">Bio</h3>
 
 Hsin-Kai loves trains and railway. He has Japanese N0 certification and he got 130 on his TOEFL test.

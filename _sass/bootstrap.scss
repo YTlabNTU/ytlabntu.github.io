@@ -34,8 +34,6 @@ p {
 }
 
 .img-cover {
-  // max-height: 250px;
-  aspect-ratio: 1/1; /* Forces a square ratio */
   width: 100%;
   object-fit: cover;
   border-radius: 8px;

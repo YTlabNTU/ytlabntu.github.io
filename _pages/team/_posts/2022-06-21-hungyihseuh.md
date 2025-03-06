@@ -14,11 +14,13 @@ social:
   github: 
   website: 
   orcid: 
+  researchgate: 
+  facebook: 
+  instagram: 
 education:
   - "National Taiwan University, MS in Transportation Engineering (2022)"
   - "National Cheng Kung University, BS in Transportation and Communication Management (2018)"
 
 ---
 
-<h3 style="color: #e36414;">Bio</h3>
 

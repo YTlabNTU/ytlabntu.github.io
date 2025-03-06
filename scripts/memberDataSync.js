@@ -106,11 +106,13 @@ social:
   github: ${data.social_github || ''}
   website: ${data.social_website || ''}
   orcid: ${data.social_orcid || ''}
+  researchgate: ${data.social_researchgate || ''}
+  facebook: ${data.social_facebook || ''}
+  instagram: ${data.social_instagram || ''}
 ${educationBlock}
 ---`;
 
-  const content = `
-<h3 style="color: #e36414;">Bio</h3>
+const content = `
 ${data.bio || ''}
 `;
   return frontMatter + '\n' + content;

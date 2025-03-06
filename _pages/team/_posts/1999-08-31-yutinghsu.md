@@ -14,6 +14,9 @@ social:
   github: 
   website: 
   orcid: https://orcid.org/0000-0001-7467-0101
+  researchgate: 
+  facebook: 
+  instagram: 
 education:
   - "Purdue University, PhD in Civil Engineering (2013)"
   - "National Taiwan University, MS in Transportation Engineering (2004)"
@@ -21,7 +24,6 @@ education:
 
 ---
 
-<h3 style="color: #e36414;">Bio</h3>
 
 I am an associate professor in the [Department of Civil Engineering](https://www.ce.ntu.edu.tw) at National Taiwan University (NTU).
 
