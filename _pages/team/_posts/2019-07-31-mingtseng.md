@@ -7,16 +7,18 @@ image: r06_明儀.jpg
 role: RD Engineer@WeBIM Services
 permalink: 'team/mingtseng'
 social:
-    email: mailto:mindyplanet@gmail.com
-    twitter: 
-    linkedin: 
-    google-scholar: 
-    github: 
-    website: 
-    orcid: 
-    research-gate: 
+  email: mailto:mindyplanet@gmail.com
+  twitter: 
+  linkedin: 
+  google-scholar: 
+  github: 
+  website: 
+  orcid: 
 education:
- - National Taiwan University, MS in Transportation Engineering (2019)
- - National Taiwan University, BS in Civil Engineering (2017)
+  - "National Taiwan University, MS in Transportation Engineering (2019)"
+  - "National Taiwan University, BS in Civil Engineering (2017)"
+
 ---
+
+<h3 style="color: #e36414;">Bio</h3>
 
