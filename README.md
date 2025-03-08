@@ -7,8 +7,8 @@ This repo is forked from [rt2lab/rt2lab.github.io](https://github.com/rt2lab/rt2
 
 ## TODO
 
-- [ ] Create Github Action to update team members automatically from google sheet daily
-- [ ] Create Github Action to update publications automatically from google sheet daily
+- [x] Create Github Action to update team members automatically from google sheet daily
+- [x] Create Github Action to update publications automatically from google sheet daily
 - [ ] Create Github Action to copy images from google drive to github repo
 
 Current admin: 

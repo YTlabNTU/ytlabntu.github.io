@@ -1,0 +1,46 @@
+name: Sync Data
+
+on:
+  # You can trigger this workflow manually:
+  workflow_dispatch:
+  # Optionally, schedule it (here: daily at midnight UTC)
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Setup Node.js environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Adjust the Node.js version as needed
+
+      # Install dependencies (make sure you have a package.json file with required packages)
+      - name: Install Dependencies
+        run: npm install
+
+      # Run your member sync script with the secret injected into the environment
+      - name: Run Sync Script (Download)
+        env:
+          SHEET_CSV_URL: ${{ secrets.MEMBER_CSV_URL }}
+        run: node scripts/syncMembers.js download
+
+      # Run publication sync script
+      - name: Run Sync Script (Publication)
+        env:
+          PUBLICATION_CSV_URL: ${{ secrets.PUBLICATION_CSV_URL }}
+        run: node scripts/syncPublications.js sync
+
+      - name: Commit and Push Changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          message: "Sync members update [skip ci]"
+          add: "."

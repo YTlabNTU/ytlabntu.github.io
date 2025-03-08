@@ -5,7 +5,7 @@ const csv = require('csvtojson');
 const yaml = require('js-yaml');
 
 // 請將此處換成你的 Google Sheets CSV URL
-const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1RGmQ2-gbt0p9A2Zvr7ywIek-y2NZDBW88Mklz6sk0zg/export?format=csv&gid=1209924479';
+const MEMBER_CSV_URL = process.env.MEMBER_CSV_URL;
 
 /**
  * 同步資料
@@ -17,7 +17,7 @@ async function syncData(direction = 'download') {
   if (direction === 'download') {
     try {
       // 從 Google Sheets 取得 CSV 內容
-      const response = await fetch(SHEET_CSV_URL);
+      const response = await fetch(MEMBER_CSV_URL);
       const csvText = await response.text();
       // 轉換成 JSON 格式，每一筆代表一位成員
       const jsonData = await csv().fromString(csvText);

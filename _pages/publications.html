@@ -5,10 +5,10 @@ excerpt: YT Lab -- Publications.
 permalink: /publications/
 ---
 
-<!-- New Claim Button on Top -->
+<!-- New Report Button on Top -->
 <div style="margin-bottom: 1rem;">
     <button onclick="document.getElementById('claim-article').scrollIntoView({behavior: 'smooth'})" style="padding: 0.5rem 1rem;">
-        Claim New Article
+        Report New Article
     </button>
 </div>
 
@@ -28,10 +28,10 @@ permalink: /publications/
 </ul>
 
 <div id="claim-article" style="margin-bottom: 2rem;">
-        <h2>Claim New Article</h2>
+        <h2>Report New Article</h2>
         <form id="claim-form">
                 <input type="text" id="doi" placeholder="Enter DOI" required style="padding: 0.5rem; width: 70%;" />
-                <button type="submit" style="padding: 0.5rem;">Claim Article</button>
+                <button type="submit" style="padding: 0.5rem;">Report Article</button>
         </form>
         <p id="status" style="color: green;"></p>
 </div>
@@ -54,7 +54,7 @@ permalink: /publications/
                 })
                 .then(response => {
                         if (response.ok) {
-                                status.textContent = 'Claim submitted successfully! Please wait for approval. (Case ID: ' + caseId + ')';
+                                status.textContent = 'Report submitted successfully! Please wait for approval. (Case ID: ' + caseId + ')';
                                 document.getElementById('claim-form').reset();
                         } else {
                                 status.textContent = 'Error submitting claim.';
