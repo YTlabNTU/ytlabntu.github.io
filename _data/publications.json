@@ -1,7 +1,7 @@
 [
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2014.0,
+        "Publication Year": 2014,
         "Author": "Hsu, Yu-Ting; Peeta, Srinivas",
         "Title": "Risk-based spatial zone determination problem for stage-based evacuation operations",
         "Short Title": "",
@@ -17,7 +17,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2012.0,
+        "Publication Year": 2012,
         "Author": "Hsu, Yu-Ting; Peeta, Srinivas",
         "Title": "An aggregate approach to model evacuee behavior for no-notice evacuation operations",
         "Short Title": "",
@@ -33,7 +33,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2021.0,
+        "Publication Year": 2021,
         "Author": "Hsu, Yu-Ting; Yan, Shangyao; Huang, Powei",
         "Title": "The depot and charging facility location problem for electrifying urban bus services",
         "Short Title": "",
@@ -49,7 +49,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2019.0,
+        "Publication Year": 2019,
         "Author": "Chu, James C.; Korsesthakarn, Kanticha; Hsu, Yu-Ting; Wu, Hua-Yen",
         "Title": "Models and a solution algorithm for planning transfer synchronization of bus timetables",
         "Short Title": "",
@@ -65,7 +65,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2018.0,
+        "Publication Year": 2018,
         "Author": "Chang, Tang-Hsien; Tseng, Jen-Sung; Hsieh, Tung-Hung; Hsu, Yu-Ting; Lu, Ying-Chih",
         "Title": "Green transportation implementation through distance-based road pricing",
         "Short Title": "",
@@ -81,7 +81,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2013.0,
+        "Publication Year": 2013,
         "Author": "Hsu, Yu-Ting; Peeta, Srinivas",
         "Title": "Clearance Time Estimation for Incorporating Evacuation Risk in Routing Strategies for Evacuation Operations",
         "Short Title": "",
@@ -97,7 +97,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2016.0,
+        "Publication Year": 2016,
         "Author": "Miralinaghi, Mohammad; Lou, Yingyan; Hsu, Yu\u2010Ting; Shabanpour, Ramin; Shafahi, Yousef",
         "Title": "Multiclass fuzzy user equilibrium with endogenous membership functions and risk\u2010taking behaviors",
         "Short Title": "",
@@ -113,7 +113,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2020.0,
+        "Publication Year": 2020,
         "Author": "Ni, Ying-Chuan; Lo, Hsien-Hao; Hsu, Yu-Ting; Huang, Hung-Jen",
         "Title": "Exploring the effects of passive transit signal priority design on bus rapid transit operation: a microsimulation-based optimization approach",
         "Short Title": "",
@@ -129,7 +129,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2019.0,
+        "Publication Year": 2019,
         "Author": "Wu, Yi-Hsuan; Kang, Lei; Hsu, Yu-Ting; Wang, Po-Chieh",
         "Title": "Exploring trip characteristics of bike-sharing system uses: Effects of land-use patterns and pricing scheme change",
         "Short Title": "",
@@ -145,7 +145,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2020.0,
+        "Publication Year": 2020,
         "Author": "Miralinaghi, Mohammad; Seilabi, Sania E.; Chen, Sikai; Hsu, Yu-Ting; Labi, Samuel",
         "Title": "Optimizing the selection and scheduling of multi-class projects using a Stackelberg framework",
         "Short Title": "",
@@ -161,7 +161,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2021.0,
+        "Publication Year": 2021,
         "Author": "Hsiao, Chun-Chien; Sun, Min-Ci; Chen, Albert Y.; Hsu, Yu-Ting",
         "Title": "Location problems for shelter-in-place deployment: A case study of vertical evacuation upon dam-break floods",
         "Short Title": "",
@@ -177,7 +177,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2014.0,
+        "Publication Year": 2014,
         "Author": "Hsu, Yu-Ting; Peeta, Srinivas",
         "Title": "Behavior-consistent information-based network traffic control for evacuation operations",
         "Short Title": "",
@@ -193,7 +193,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2021.0,
+        "Publication Year": 2021,
         "Author": "Wang, Po-Chieh; Hsu, Yu-Ting; Hsu, Chia-Wei",
         "Title": "Analysis of waiting time perception of bus passengers provided with mobile service",
         "Short Title": "",
@@ -209,23 +209,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2016.0,
-        "Author": "Hsu, Yu-Ting; Kang, Lei; Wu, Yi-Hsuan",
-        "Title": "User Behavior of Bikesharing Systems Under Demand\u2013Supply Imbalance",
-        "Short Title": "",
-        "Publication Title": "Transportation Research Record: Journal of the Transportation Research Board",
-        "DOI": "https://doi.org/10.3141/2587-14",
-        "Url": "https://doi.org/10.3141/2587-14",
-        "Abstract Note": "<jats:p> Bikesharing systems have been expanding rapidly. They are recognized as a strategic tool to integrate transit and to foster sustainable transportation in urban areas. A critical problem that arises in the planning and deployment of a bikesharing system lies in demand\u2013supply imbalance as the result of the spatiotemporal dynamics of demand patterns. The problem manifests itself in situations in which no bikes are available to rent and no docks are available for bike return at certain popular stations. This study developed a framework for modeling user behavior in response to such situations. Particular emphasis was placed on user on-site choice behavior and the behavioral aspect related to wait time if a decision to wait for the next bike or dock was made. These behaviors were approached with the use of a discrete choice model and a duration model, respectively. Further, a discrete-continuous process was proposed to address the potential interrelation that existed between the choice to wait and the length of waiting time to be endured. Within the developed framework, the models were estimated on the basis of the data from a revealed preference\u2013stated preference survey conducted on the YouBike system in Taipei, Taiwan. The estimation results provided insights into user familiarity and uncertainty toward the system, travel situation, or environment and the associated effects on user behavior of a bikesharing system under a demand\u2013supply imbalance. </jats:p>",
-        "Date": "2016-01-01",
-        "Pages": "117-124",
-        "Issue": "1",
-        "Volume": "2587",
-        "Library Catalog": ""
-    },
-    {
-        "Item Type": "journalArticle",
-        "Publication Year": 1985.0,
+        "Publication Year": 1985,
         "Author": "Leonard, Ralph",
         "Title": "Mass evacuation in disasters",
         "Short Title": "",
@@ -241,23 +225,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2012.0,
-        "Author": "Liu, Rongfang; Li, Andy",
-        "Title": "Forecasting high-speed rail ridership using a simultaneous modeling approach",
-        "Short Title": "",
-        "Publication Title": "Transportation Planning and Technology",
-        "DOI": "https://doi.org/10.1080/03081060.2012.701816",
-        "Url": "https://doi.org/10.1080/03081060.2012.701816",
-        "Abstract Note": "",
-        "Date": "2012-07-01",
-        "Pages": "577-590",
-        "Issue": "5",
-        "Volume": "35",
-        "Library Catalog": ""
-    },
-    {
-        "Item Type": "journalArticle",
-        "Publication Year": 2022.0,
+        "Publication Year": 2022,
         "Author": "Chou, Chi-Ya; Lin, Szu-Yun; Yang, Cheng-Tao; Hsu, Yu-Ting",
         "Title": "Risk perception of earthquakes: Modeling conception of willingness to pay and prospect theory",
         "Short Title": "",
@@ -273,7 +241,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2016.0,
+        "Publication Year": 2016,
         "Author": "Chang, Tang-Hsien; Chen, Albert Y.; Hsu, Yu-Ting; Yang, Chien-Li",
         "Title": "Freeway Travel Time Prediction Based on Seamless Spatio-temporal Data Fusion: Case Study of the Freeway in Taiwan",
         "Short Title": "",
@@ -289,7 +257,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2022.0,
+        "Publication Year": 2022,
         "Author": "Sun, Min-Ci; Sakai, Katsuya; Chen, Albert Y.; Hsu, Yu-Ting",
         "Title": "Location problems of vertical evacuation structures for dam-failure floods: Considering shelter-in-place and horizontal evacuation",
         "Short Title": "",
@@ -305,7 +273,7 @@
     },
     {
         "Item Type": "proceedingsArticle",
-        "Publication Year": 2017.0,
+        "Publication Year": 2017,
         "Author": "Song, Dongyoon; Peeta, Srinivas; Hsu, Yu-ting; Agrawal, Shubham",
         "Title": "Role of Psychological Effects of Real-Time Travel Information Provision on En Route Traveler Route Choice Decisions",
         "Short Title": "",
@@ -321,7 +289,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2007.0,
+        "Publication Year": 2007,
         "Author": "Chiu, Yi-Chang; Zheng, Hong; Villalobos, Jorge; Gautam, Bikash",
         "Title": "Modeling no-notice mass evacuation using a dynamic traffic flow optimization model",
         "Short Title": "",
@@ -337,7 +305,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2004.0,
+        "Publication Year": 2004,
         "Author": "Kirjakka, Marjut",
         "Title": "Fire alleys in Finnish urban design",
         "Short Title": "",
@@ -353,7 +321,7 @@
     },
     {
         "Item Type": "report",
-        "Publication Year": 2011.0,
+        "Publication Year": 2011,
         "Author": "Peeta, Srinivas; Sharma, Sushant; Hsu, Yu-Ting",
         "Title": "Dynamic Real-Time Routing for Evacuation Response Planning and Execution",
         "Short Title": "",
@@ -369,7 +337,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2024.0,
+        "Publication Year": 2024,
         "Author": "Shih, Hsin-Cheng; Hsu, Yu-Ting; Lai, Yung-Cheng (Rex)",
         "Title": "Modeling non-compensatory strategies on path choices in a complex urban rail transit network considering characteristics of transfer passengers and trips",
         "Short Title": "",
@@ -385,7 +353,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2022.0,
+        "Publication Year": 2022,
         "Author": "Shen, Chung-Wei; Mao, Mei-Neng; Hsu, Yu-Ting; Miralinaghi, Mohammad",
         "Title": "Research on Features of Pedestrians Using Smartphones at Transit Stations Based on Social Force Model",
         "Short Title": "",
@@ -401,7 +369,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2022.0,
+        "Publication Year": 2022,
         "Author": "Su, Yu-Min; Chen, Jieh-Haur; Cheng, Jiun-Yao; Hsu, Yu-Ting; Huang, Ming-Cheng",
         "Title": "Rough-Set Based Association Rules toward Performance of High-Friction Road Markings",
         "Short Title": "",
@@ -417,7 +385,7 @@
     },
     {
         "Item Type": "bookChapter",
-        "Publication Year": 2017.0,
+        "Publication Year": 2017,
         "Author": "Peng, Keke; Yuan, Caiwei; Xu, Wen",
         "Title": "Perspectives of Big Data Analysis in Urban Railway Planning: Shenzhen Metro Case Study",
         "Short Title": "",
@@ -433,7 +401,7 @@
     },
     {
         "Item Type": "proceedingsArticle",
-        "Publication Year": 2006.0,
+        "Publication Year": 2006,
         "Author": "Hajiaghayi, M. T.; Li, L.; Mirrokni, V. S.; Thottan, M.",
         "Title": "Bandwidth Sharing Network Design for Multi-Class Traffic",
         "Short Title": "",
@@ -448,24 +416,8 @@
         "Library Catalog": ""
     },
     {
-        "Item Type": "proceedingsArticle",
-        "Publication Year": 2017.0,
-        "Author": "Song, Dongyoon; Peeta, Srinivas; Hsu, Yu-ting; Agrawal, Shubham",
-        "Title": "Role of Psychological Effects of Real-Time Travel Information Provision on En Route Traveler Route Choice Decisions",
-        "Short Title": "",
-        "Publication Title": "Proceedings of the 9th International Driving Symposium on Human Factors in Driver Assessment, Training, and Vehicle Design: driving assessment 2017",
-        "DOI": "https://doi.org/10.17077/drivingassessment.1647",
-        "Url": "https://doi.org/10.17077/drivingassessment.1647",
-        "Abstract Note": "",
-        "Date": "2017-01-01",
-        "Pages": "277-283",
-        "Issue": "",
-        "Volume": "",
-        "Library Catalog": ""
-    },
-    {
         "Item Type": "journalArticle",
-        "Publication Year": 2016.0,
+        "Publication Year": 2016,
         "Author": "Hsu, Yu\u2010Ting; Peeta, Srinivas",
         "Title": "Online calibration of an integrated framework for information\u2010based evacuation operations",
         "Short Title": "",
@@ -481,7 +433,7 @@
     },
     {
         "Item Type": "bookChapter",
-        "Publication Year": 2021.0,
+        "Publication Year": 2021,
         "Author": "Chen, Shi-Huang; Wang, Jin-Yuan; Hsu, Yu-Ting; Chen, Chi-Hwa; Chen, Chih-Yueh",
         "Title": "Development of a Vehicle Monitoring System for Low-Emission Zone Application Based on OBD Technology",
         "Short Title": "",
@@ -497,7 +449,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2019.0,
+        "Publication Year": 2019,
         "Author": "Wu, Yi-Hsuan; Kang, Lei; Hsu, Yu-Ting; Wang, Po-Chieh",
         "Title": "Exploring trip characteristics of bike-sharing system uses: Effects of land-use patterns and pricing scheme change",
         "Short Title": "",
@@ -513,7 +465,7 @@
     },
     {
         "Item Type": "bookChapter",
-        "Publication Year": 2009.0,
+        "Publication Year": 2009,
         "Author": "",
         "Title": "A Framework for Linking Supply and Demand of Disaster Insurance",
         "Short Title": "",
@@ -529,7 +481,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2010.0,
+        "Publication Year": 2010,
         "Author": "Pel, Adam J; Hoogendoorn, Serge P; Bliemer, Michiel CJ",
         "Title": "Evacuation modeling including traveler information and compliance behavior",
         "Short Title": "",
@@ -545,7 +497,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2025.0,
+        "Publication Year": 2025,
         "Author": "Yan, Shangyao; Sun, Ching-Sheng; Hsu, Yu-Ting",
         "Title": "Airport escort manpower supply planning and scheduling",
         "Short Title": "",
@@ -561,7 +513,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2025.0,
+        "Publication Year": 2025,
         "Author": "Shih, Hsin-Cheng Ivan; Wijaya, Kenny Chandra; Hsueh, Hung-Yi; Hsu, Yu-Ting",
         "Title": "Away from over-populated development: Estimating urban carrying capacity with an integrated perspective of transportation and urban planning",
         "Short Title": "",
@@ -577,7 +529,7 @@
     },
     {
         "Item Type": "bookChapter",
-        "Publication Year": 2024.0,
+        "Publication Year": 2024,
         "Author": "Hsu, Yu-Ting; Wijaya, Kenny Chandra; Shih, Hsin-Cheng",
         "Title": "COVID-19 public transport responses in Taipei and Kaohsiung",
         "Short Title": "",
@@ -593,23 +545,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2020.0,
-        "Author": "; G, Rajasekaran; Kumar, Pradeep; ; R, Rithik; ; L, Pradeesh; ",
-        "Title": "Station-Less Bike-Sharing System",
-        "Short Title": "",
-        "Publication Title": "International Journal of Recent Technology and Engineering (IJRTE)",
-        "DOI": "https://doi.org/10.35940/ijrte.a1998.059120",
-        "Url": "https://doi.org/10.35940/ijrte.a1998.059120",
-        "Abstract Note": "<jats:p>Nowadays in the 21st century, Transportation has become a mandatory aspect of every individual\u2019s life. There is a constant requirement for easy, cheap and accessible modes of transportation everywhere, especially in metropolitan areas. Bikes are becoming the most affordable and efficient way of getting from point A to point B. Commuters who can\u2019t afford their own personal vehicles and in case their personal vehicle is not readily accessible to them struggle to get their commuting needs done. Tourists who need temporary transportation access can make use of bike-sharing systems for fulfilling their needs. The current system has fixed points or stations where the bikes need to be dropped off. We propose a system that does not involve any stations for the bikes and rather the user can drop off the bike at any location of his choosing and the payment process can be furnished on the mobile application.</jats:p>",
-        "Date": "2020-05-30",
-        "Pages": "680-684",
-        "Issue": "1",
-        "Volume": "9",
-        "Library Catalog": ""
-    },
-    {
-        "Item Type": "journalArticle",
-        "Publication Year": 2021.0,
+        "Publication Year": 2021,
         "Author": "Sun, Min-Ci; Sakai, Katsuya; Chen, Albert Y.; Hsu, Yu-Ting",
         "Title": "Location Problems of In-Place Shelters for Dam-Failure Floods: Considering Vertical and Horizontal Evacuation",
         "Short Title": "",
@@ -625,7 +561,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2020.0,
+        "Publication Year": 2020,
         "Author": "Lee, Wen-Yu; Hsu, Yu-Ting; Suen, Chian-Shan; Wu, Ming-Hsuan; Ni, Ying-Chuan",
         "Title": "Exploring Intercity Trip Patterns of Railway Systems on National Holidays Using Deep Auto-Encoder",
         "Short Title": "",
@@ -641,7 +577,7 @@
     },
     {
         "Item Type": "proceedingsArticle",
-        "Publication Year": 2021.0,
+        "Publication Year": 2021,
         "Author": "D\u00edaz, Joshua Guevara; Santiv\u00e1\u00f1ez, Jos\u00e9 A.; Valerio, Ra\u00fal; P\u00e9rez-Lespier, Lizzette",
         "Title": "Restoration of Services in Disrupted Interdependent Infrastructure Systems",
         "Short Title": "",
@@ -657,7 +593,7 @@
     },
     {
         "Item Type": "proceedingsArticle",
-        "Publication Year": 2018.0,
+        "Publication Year": 2018,
         "Author": "Chang, Tang-Hsien; Hsu, Yu-Ting; Wu, Kuan-Te",
         "Title": "Vehicular Ad-Hoc Network with a Multi-Hop Transmission Protocol",
         "Short Title": "",
@@ -673,7 +609,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2010.0,
+        "Publication Year": 2010,
         "Author": "Tanaka, Ken-ichi; Furuta, Takehiro",
         "Title": "Flow interception location problem with two level hierarchical facilities",
         "Short Title": "",
@@ -689,7 +625,7 @@
     },
     {
         "Item Type": "other",
-        "Publication Year": 2023.0,
+        "Publication Year": 2023,
         "Author": "Wang, Jiaoe; Xiao, Fan",
         "Title": "High\u2010Speed Rail and Regional Development",
         "Short Title": "",
@@ -705,7 +641,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2013.0,
+        "Publication Year": 2013,
         "Author": "Hsu, Yu-Ting; Peeta, Srinivas",
         "Title": "Clearance Time Estimation for Incorporating Evacuation Risk in Routing Strategies for Evacuation Operations",
         "Short Title": "",
@@ -721,7 +657,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2014.0,
+        "Publication Year": 2014,
         "Author": "Hsu, Yu-Ting; Peeta, Srinivas",
         "Title": "Behavior-consistent information-based network traffic control for evacuation operations",
         "Short Title": "",
@@ -737,7 +673,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2013.0,
+        "Publication Year": 2013,
         "Author": "Antoniou, Constantinos; Koutsopoulos, Haris N.; Yannis, George",
         "Title": "Dynamic data-driven local traffic state estimation and prediction",
         "Short Title": "",
@@ -753,7 +689,7 @@
     },
     {
         "Item Type": "journalArticle",
-        "Publication Year": 2022.0,
+        "Publication Year": 2022,
         "Author": "Shih, Hsin-Cheng; Hsu, Yu-Ting; Lai, Yung-Cheng Rex",
         "Title": "Modeling Non-Compensatory Strategies on Path Choice Decisions in a Complex Metro Network Considering Characteristics of Transfer Passengers and Trips",
         "Short Title": "",
@@ -785,7 +721,7 @@
     },
     {
         "Item Type": "proceedingsArticle",
-        "Publication Year": 2017.0,
+        "Publication Year": 2017,
         "Author": "Dai, Zhi-You; Kang, Jhihfu; Li, Ning; Yang, Likai; Hsu, Yu-Ting",
         "Title": "Partition Problem for Optimizing the Deployment of Incident Response",
         "Short Title": "",
@@ -801,7 +737,7 @@
     },
     {
         "Item Type": "proceedingsArticle",
-        "Publication Year": 2017.0,
+        "Publication Year": 2017,
         "Author": "Hsu, Yu-Ting; Chen, Hsiang-Yin",
         "Title": "Formulating the Minimum Network Clearance Time for Evacuation Problems",
         "Short Title": "",
