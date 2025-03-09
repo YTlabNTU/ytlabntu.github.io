@@ -14,6 +14,36 @@ def get_author_publications(author_id):
     except Exception as e:
         print(f"Error retrieving publications: {e}")
         return []
+    
+def search_crossref_by_title_and_author(title, author):
+    """
+    Searches CrossRef for a publication using the title and author.
+    Returns a tuple (doi, details) if found, otherwise (None, None).
+    """
+    crossref_url = "https://api.crossref.org/works"
+    params = {
+        'query.bibliographic': title,
+        'query.author': author,
+        'rows': 1  # Get top result
+    }
+    try:
+        response = requests.get(crossref_url, params=params, timeout=10)
+        if response.status_code == 200:
+            data = response.json()
+            items = data.get("message", {}).get("items", [])
+            if items:
+                best_match = items[0]
+                doi = best_match.get("DOI")
+                return doi, best_match
+            else:
+                print(f"No CrossRef match found for title: {title} and author: {author}")
+                return None, None
+        else:
+            print(f"CrossRef returned status {response.status_code} for title: {title} and author: {author}")
+            return None, None
+    except Exception as e:
+        print(f"Error searching CrossRef for title '{title}' and author '{author}': {e}")
+        return None, None
 
 def search_crossref_by_title(title):
     """
@@ -111,7 +141,8 @@ def main(author_id):
         if not title:
             continue
         print(f"Processing publication: {title}")
-        doi, details = search_crossref_by_title(title)
+        # doi, details = search_crossref_by_title(title)
+        doi, details = search_crossref_by_title_and_author(title, 'Yu-Ting Hsu')
         if doi and details:
             record = map_crossref_to_record(details)
             records.append(record)
