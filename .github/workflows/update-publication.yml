@@ -25,7 +25,7 @@ jobs:
           pip install scholarly requests
       
       - name: Update publications from Google Scholar
-        run: python .github/scripts/update_publications.py
+        run: python scripts/update_publications.py
       
       - name: Check for changes
         id: git-check
