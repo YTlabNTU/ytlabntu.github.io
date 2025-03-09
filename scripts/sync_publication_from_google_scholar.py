@@ -1,3 +1,4 @@
+import difflib
 import json
 import requests
 from scholarly import scholarly
@@ -14,6 +15,46 @@ def get_author_publications(author_id):
     except Exception as e:
         print(f"Error retrieving publications: {e}")
         return []
+    
+def search_crossref_strict(title, author, year):
+    """
+    Searches CrossRef for a publication using the title, author, and year.
+    Returns a tuple (doi, details) if found and the title match is 90% or more, otherwise (None, None).
+    """
+    if year == "":
+        return search_crossref_by_title_and_author(title, author)
+    
+    crossref_url = "https://api.crossref.org/works"
+    params = {
+        'query.bibliographic': title,
+        'query.author': author,
+        'query.issued': year,
+        'rows': 1  # Get the top result only
+    }
+    try:
+        response = requests.get(crossref_url, params=params, timeout=10)
+        if response.status_code == 200:
+            data = response.json()
+            items = data.get("message", {}).get("items", [])
+            if items:
+                best_match = items[0]
+                doi = best_match.get("DOI")
+                # Get the title from the CrossRef result (it may be a list)
+                crossref_title = best_match.get("title", [None])[0]
+                if crossref_title:
+                    # Calculate similarity ratio using difflib
+                    match_ratio = difflib.SequenceMatcher(None, title.lower(), crossref_title.lower()).ratio()
+                    if match_ratio >= 0.9:
+                        return doi, best_match
+                    else:
+                        print(f"Title match percentage too low: {match_ratio:.2%} (required >= 90%)")
+                else:
+                    print("No title found in CrossRef result.")
+        else:
+            print(f"CrossRef returned status {response.status_code}")
+    except Exception as e:
+        print(f"Error fetching details from CrossRef: {e}")
+    return None, None
     
 def search_crossref_by_title_and_author(title, author):
     """
@@ -34,16 +75,22 @@ def search_crossref_by_title_and_author(title, author):
             if items:
                 best_match = items[0]
                 doi = best_match.get("DOI")
-                return doi, best_match
-            else:
-                print(f"No CrossRef match found for title: {title} and author: {author}")
-                return None, None
+                # Get the title from the CrossRef result (it may be a list)
+                crossref_title = best_match.get("title", [None])[0]
+                if crossref_title:
+                    # Calculate similarity ratio using difflib
+                    match_ratio = difflib.SequenceMatcher(None, title.lower(), crossref_title.lower()).ratio()
+                    if match_ratio >= 0.9:
+                        return doi, best_match
+                    else:
+                        print(f"Title match percentage too low: {match_ratio:.2%} (required >= 90%)")
+                else:
+                    print("No title found in CrossRef result.")
         else:
-            print(f"CrossRef returned status {response.status_code} for title: {title} and author: {author}")
-            return None, None
+            print(f"CrossRef returned status {response.status_code}")
     except Exception as e:
-        print(f"Error searching CrossRef for title '{title}' and author '{author}': {e}")
-        return None, None
+        print(f"Error fetching details from CrossRef: {e}")
+    return None, None
 
 def search_crossref_by_title(title):
     """
@@ -138,11 +185,13 @@ def main(author_id):
     records = []
     for pub in publications:
         title = pub.get('bib', {}).get('title', '')
+        year = pub.get('bib', {}).get('year', '')
         if not title:
             continue
         print(f"Processing publication: {title}")
         # doi, details = search_crossref_by_title(title)
-        doi, details = search_crossref_by_title_and_author(title, 'Yu-Ting Hsu')
+        # doi, details = search_crossref_by_title_and_author(title, 'Yu-Ting Hsu')
+        doi, details = search_crossref_strict(title, 'Yu-Ting Hsu', year)
         if doi and details:
             record = map_crossref_to_record(details)
             records.append(record)
