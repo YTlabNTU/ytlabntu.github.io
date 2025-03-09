@@ -12,56 +12,61 @@ permalink: /publications/
     </button>
 </div>
 
+{%- comment -%}
+  Use group_by_exp to assign a default value of "No Year" if Publication Year is empty.
+{%- endcomment -%}
+{% assign pub_list = site.data.publications | group_by_exp:"pub", "pub['Publication Year'] != '' ? pub['Publication Year'] : 'No Year'" | sort: "name" | reverse %}
+
 <ul class="list-unstyled">
-        {% assign pub_list = site.data.publications | sort: 'Publication Year' | group_by: 'Publication Year' | reverse %}
-
-        {% for group in pub_list %}
-
-                {% assign year = group.name | to_integer %}
-
-                <h3 class="mt-4">{{ year }}</h3>
-                {% for publi in group.items %}
-                        {%- include publication.html -%}
-                {% endfor %}
-
+    {% for group in pub_list %}
+        <h3 class="mt-4">
+            {% if group.name == "No Year" %}
+                No Year
+            {% else %}
+                {{ group.name | to_integer }}
+            {% endif %}
+        </h3>
+        {% for publi in group.items %}
+            {%- include publication.html -%}
         {% endfor %}
+    {% endfor %}
 </ul>
 
 <div id="claim-article" style="margin-bottom: 2rem;">
-        <h2>Report New Article</h2>
-        <form id="claim-form">
-                <input type="text" id="doi" placeholder="Enter DOI" required style="padding: 0.5rem; width: 70%;" />
-                <button type="submit" style="padding: 0.5rem;">Report Article</button>
-        </form>
-        <p id="status" style="color: green;"></p>
+    <h2>Report New Article</h2>
+    <form id="claim-form">
+        <input type="text" id="doi" placeholder="Enter DOI" required style="padding: 0.5rem; width: 70%;" />
+        <button type="submit" style="padding: 0.5rem;">Report Article</button>
+    </form>
+    <p id="status" style="color: green;"></p>
 </div>
 
 <script>
-        document.getElementById('claim-form').addEventListener('submit', function(e) {
-                e.preventDefault();
-                const doi = document.getElementById('doi').value.trim();
-                if (!doi) return;
-                const status = document.getElementById('status');
-                status.textContent = 'Submitting...';
-                const caseId = Math.random().toString(36).substring(2);
+    document.getElementById('claim-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const doi = document.getElementById('doi').value.trim();
+        if (!doi) return;
+        const status = document.getElementById('status');
+        status.textContent = 'Submitting...';
+        const caseId = Math.random().toString(36).substring(2);
                                
-                fetch('https://discord.com/api/webhooks/1347934520074174464/AV8VKlkbsWllPMqcvG0r1eShtBO9AnAUpOOwTPOVvcj2CBcgUPR21KidpbxkW9cl7qLF', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({
-                                content: 'New article claim: ' + doi + ' (Case ID: ' + caseId + ')'
-                        })
-                })
-                .then(response => {
-                        if (response.ok) {
-                                status.textContent = 'Report submitted successfully! Please wait for approval. (Case ID: ' + caseId + ')';
-                                document.getElementById('claim-form').reset();
-                        } else {
-                                status.textContent = 'Error submitting claim.';
-                        }
-                })
-                .catch(error => {
-                        status.textContent = 'Error submitting claim.';
-                });
+        fetch('https://discord.com/api/webhooks/1347934520074174464/AV8VKlkbsWllPMqcvG0r1eShtBO9AnAUpOOwTPOVvcj2CBcgUPR21KidpbxkW9cl7qLF', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                content: 'New article claim: ' + doi + ' (Case ID: ' + caseId + ')'
+            })
+        })
+        .then(response => {
+            if (response.ok) {
+                status.textContent = 'Report submitted successfully! Please wait for approval. (Case ID: ' + caseId + ')';
+                document.getElementById('claim-form').reset();
+            } else {
+                status.textContent = 'Error submitting claim.';
+            }
+        })
+        .catch(error => {
+            status.textContent = 'Error submitting claim.';
         });
+    });
 </script>
