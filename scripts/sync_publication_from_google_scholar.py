@@ -1,136 +1,130 @@
-#!/usr/bin/env python3
-"""
-Script to update publications.json by fetching data from Google Scholar.
-"""
 import json
-import os
-import re
-from datetime import datetime
+import requests
 from scholarly import scholarly
 
-# Configuration
-# List of author IDs to track
-SCHOLAR_AUTHOR_IDS = [
-    "WWrZhf0AAAAJ"
-]
-
-def format_author_names(authors_list):
-    """Format author names in the required format with 'and' as delimiter."""
-    if isinstance(authors_list, str):
-        return authors_list
-    
-    # Join authors with " and " instead of semicolons
-    return " and ".join(authors_list)
-
-def clean_title(title):
-    """Clean up title formatting."""
-    return title.strip()
-
-def parse_publication_date(bib):
-    """Extract and format publication date."""
-    # Try to extract date from bib info
-    year = bib.get('pub_year', '')
-    
-    # Default to current year if no year is found
-    if not year:
-        return datetime.now().strftime("%Y-%m-%d"), datetime.now().year
-    
-    # Create a date string (using January 1st as default)
-    date_str = f"{year}-01-01"
-    
-    return date_str, int(year)
-
-def convert_scholar_to_publication_format(pub):
-    """Convert Google Scholar publication data to our JSON format."""
-    bib = pub.get('bib', {})
-    
-    # Extract and format date information
-    date_str, year = parse_publication_date(bib)
-    
-    # Determine publication type (simplified)
-    pub_type = "journalArticle"
-    if "conference" in bib.get('venue', '').lower():
-        pub_type = "conferencePaper"
-    
-    # Create entry in our format
-    entry = {
-        "Item Type": pub_type,
-        "Publication Year": int(year),
-        "Author": format_author_names(bib.get('author', [])),
-        "Title": clean_title(bib.get('title', '')),
-        "Short Title": "",
-        "Publication Title": bib.get('venue', ''),
-        "DOI": bib.get('url', ''),  # Using URL as DOI if actual DOI not available
-        "Url": bib.get('url', ''),
-        "Abstract Note": bib.get('abstract', ''),
-        "Date": date_str,
-        "Pages": bib.get('pages', ''),
-        "Issue": "",
-        "Volume": "",
-        "Library Catalog": "Google Scholar"
-    }
-    
-    return entry
-
-def get_publications_from_scholar():
-    """Fetch publications from Google Scholar for specified authors."""
-    all_publications = []
-    
-    for author_id in SCHOLAR_AUTHOR_IDS:
-        try:
-            author = scholarly.search_author_id(author_id)
-            
-            if author:
-                # Fill in author data
-                author = scholarly.fill(author)
-                
-                # Get publications
-                for pub in author.get('publications', []):
-                    try:
-                        # Fill in publication details
-                        filled_pub = scholarly.fill(pub)
-                        
-                        # Convert to our format
-                        entry = convert_scholar_to_publication_format(filled_pub)
-                        
-                        # Add to our list if it's not already there (check by title)
-                        if not any(p["Title"] == entry["Title"] for p in all_publications):
-                            all_publications.append(entry)
-                    except Exception as e:
-                        print(f"Error processing publication: {e}")
-        except Exception as e:
-            print(f"Error fetching author {author_id}: {e}")
-    
-    return all_publications
-
-def update_publications_json():
-    """Update the publications.json file with new data from Google Scholar."""
-    json_path = os.path.join(os.path.dirname(__file__), "..", "_data", "publications.json")
-    
-    # Read existing data
+def get_author_publications(author_id):
+    """
+    Retrieves an author's publications from Google Scholar using their author_id.
+    """
     try:
-        with open(json_path, 'r', encoding='utf-8') as f:
-            existing_data = json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        existing_data = []
+        author = scholarly.search_author_id(author_id)
+        author = scholarly.fill(author, sections=['publications'])
+        publications = author.get('publications', [])
+        return publications
+    except Exception as e:
+        print(f"Error retrieving publications: {e}")
+        return []
+
+def search_crossref_by_title(title):
+    """
+    Searches CrossRef for a publication using the title.
+    Returns a tuple (doi, details) if found, otherwise (None, None).
+    """
+    crossref_url = "https://api.crossref.org/works"
+    params = {
+        'query.title': title,
+        'rows': 1  # Get top result
+    }
+    try:
+        response = requests.get(crossref_url, params=params, timeout=10)
+        if response.status_code == 200:
+            data = response.json()
+            items = data.get("message", {}).get("items", [])
+            if items:
+                best_match = items[0]
+                doi = best_match.get("DOI")
+                return doi, best_match
+            else:
+                print(f"No CrossRef match found for title: {title}")
+                return None, None
+        else:
+            print(f"CrossRef returned status {response.status_code} for title: {title}")
+            return None, None
+    except Exception as e:
+        print(f"Error searching CrossRef for title '{title}': {e}")
+        return None, None
+
+def map_crossref_to_record(details):
+    """
+    Maps CrossRef metadata to the required JSON keys.
+    """
+    def format_item_type(item_type):
+        # Convert from e.g., "journal-article" to "journalArticle"
+        if not item_type:
+            return ""
+        parts = item_type.split("-")
+        return parts[0].lower() + "".join(word.capitalize() for word in parts[1:])
     
-    # Get new data from Google Scholar
-    scholar_publications = get_publications_from_scholar()
+    def extract_year(issued):
+        try:
+            date_parts = issued.get("date-parts", [])
+            if date_parts and len(date_parts[0]) > 0:
+                return int(date_parts[0][0])
+        except Exception:
+            pass
+        return ""
     
-    # Merge data (add new publications)
-    for pub in scholar_publications:
-        # Check if publication already exists (by title)
-        if not any(p["Title"] == pub["Title"] for p in existing_data):
-            existing_data.append(pub)
+    def format_date(issued):
+        try:
+            date_parts = issued.get("date-parts", [])
+            if date_parts and len(date_parts[0]) > 0:
+                parts = date_parts[0]
+                # Create a date string in YYYY-MM-DD format (if month/day available)
+                year = str(parts[0])
+                month = f"{parts[1]:02d}" if len(parts) > 1 else "01"
+                day = f"{parts[2]:02d}" if len(parts) > 2 else "01"
+                return f"{year}-{month}-{day}"
+        except Exception:
+            pass
+        return ""
     
-    # Sort by publication year (descending) and then by title
-    existing_data.sort(key=lambda x: (-x.get("Publication Year", 0), x.get("Title", "")))
-    
-    # Write back to file
-    with open(json_path, 'w', encoding='utf-8') as f:
-        json.dump(existing_data, f, indent=4, ensure_ascii=False)
-    
-    print(f"Updated {json_path} with {len(scholar_publications)} new publications")
+    # Build the record with the required keys
+    record = {
+        "Item Type": format_item_type(details.get("type", "")),
+        "Publication Year": extract_year(details.get("issued", {})),
+        "Author": "; ".join(
+            f"{author.get('family', '')}, {author.get('given', '')}".strip(", ") 
+            for author in details.get("author", [])
+        ),
+        "Title": details.get("title", [""])[0] if details.get("title") else "",
+        "Short Title": "",  # Not provided by CrossRef
+        "Publication Title": details.get("container-title", [""])[0] if details.get("container-title") else "",
+        "DOI": f"https://doi.org/{details.get('DOI')}" if details.get("DOI") else "",
+        "Url": details.get("URL", ""),
+        "Abstract Note": details.get("abstract", ""),
+        "Date": format_date(details.get("issued", {})),
+        "Pages": details.get("page", ""),
+        "Issue": details.get("issue", ""),
+        "Volume": details.get("volume", ""),
+        "Library Catalog": ""
+    }
+    return record
+
+def main(author_id):
+    print("Fetching publications from Google Scholar...")
+    publications = get_author_publications(author_id)
+    print(f"Found {len(publications)} publications.")
+
+    records = []
+    for pub in publications:
+        title = pub.get('bib', {}).get('title', '')
+        if not title:
+            continue
+        print(f"Processing publication: {title}")
+        doi, details = search_crossref_by_title(title)
+        if doi and details:
+            record = map_crossref_to_record(details)
+            records.append(record)
+            print(f"  Added record with DOI: {doi}")
+        else:
+            print("  No DOI or details found, skipping.")
+
+    output_filename = "_data/publications.json"
+    with open(output_filename, "w", encoding="utf-8") as f:
+        json.dump(records, f, indent=4)
+    print(f"Saved {len(records)} publication records to '{output_filename}'.")
 
 if __name__ == "__main__":
-    update_publications_json()
+    # Replace with your actual Google Scholar author ID.
+    author_id = "WWrZhf0AAAAJ"
+    main(author_id)
