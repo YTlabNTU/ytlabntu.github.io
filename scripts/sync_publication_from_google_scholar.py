@@ -26,9 +26,9 @@ def search_crossref_strict(title, author, year):
     
     crossref_url = "https://api.crossref.org/works"
     params = {
+        'mailto': 'garywu@ntu.edu.tw',
         'query.bibliographic': title,
         'query.author': author,
-        'query.issued': year,
         'rows': 1  # Get the top result only
     }
     try:
@@ -185,7 +185,7 @@ def main(author_id):
     records = []
     for pub in publications:
         title = pub.get('bib', {}).get('title', '')
-        year = pub.get('bib', {}).get('year', '')
+        year = pub.get('bib', {}).get('pub_year', '')
         if not title:
             continue
         print(f"Processing publication: {title}")
@@ -197,7 +197,28 @@ def main(author_id):
             records.append(record)
             print(f"  Added record with DOI: {doi}")
         else:
-            print("  No DOI or details found, skipping.")
+            print("  No DOI or details found, use details from Google Scholar.")
+            ## manually pass this article
+            if title == 'Word count: Words: 7076 Tables: 2 x 250= 500 Figures: 4 x 250= 1000':
+                continue
+            pub = scholarly.fill(pub)
+            record = {
+                "Item Type": "journalArticle",
+                "Publication Year": year,
+                "Author": "; ".join(pub.get('bib', {}).get('author', '').split(" and ")),
+                "Title": title,
+                "Short Title": "",
+                "Publication Title": pub.get('bib', {}).get('journal', ''),
+                "DOI": "",
+                "Url": pub.get('bib', {}).get('url', ''),
+                "Abstract Note": pub.get('bib', {}).get('abstract', ''),
+                "Date": "",
+                "Pages": pub.get('bib', {}).get('pages', ''),
+                "Issue": pub.get('bib', {}).get('number', ''),
+                "Volume": pub.get('bib', {}).get('volume', ''),
+                "Library Catalog": ""
+            }
+            records.append(record)
 
     output_filename = "_data/publications.json"
     with open(output_filename, "w", encoding="utf-8") as f:
