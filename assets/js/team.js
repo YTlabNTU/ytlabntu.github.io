@@ -13,10 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // make image slightly larger on hover
         item.addEventListener('mouseover', event => {
             event.currentTarget.querySelector('img').style.transform = 'scale(1.05)';
+            // make image grayscale on hover
+            event.currentTarget.querySelector('img').style.filter = 'grayscale(25%)';
         });
 
         item.addEventListener('mouseout', event => {
             event.currentTarget.querySelector('img').style.transform = 'scale(1)';
+            event.currentTarget.querySelector('img').style.filter = 'none';
         });
 
     });

@@ -1,12 +1,11 @@
 <li class="media mb-5" style="margin-bottom: 1rem !important;">
-    <img class="align-self-center mr-3"
-         src="/assets/images/team/{{ member.image }}"
-         style="max-width: 100px; filter: grayscale(25%); border-radius: 50%;"
-         alt="{{member.title}}">
+  <img class="align-self-center mr-3" src="/assets/images/team/{{ member.image }}"
+    style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;"
+    alt="{{ member.title }}" href="{{ member.url }}">
 
-    <div class="media-body custom-media-body">
-      <h5 class="mt-0"><a href="{{ member.url }}">{{ member.title }}</a></h5>
-      <p style="font-size: 90%; margin-left: 0px;">{{member.role}}</p>
-      {%- include team_member_social.html -%}
-    </div>
+  <div class="media-body custom-media-body">
+    <h5 class="mt-0"><a href="{{ member.url }}">{{ member.title }}</a></h5>
+    <p style="font-size: 90%; margin-left: 0px;">{{member.role}}</p>
+    {%- include team_member_social.html -%}
+  </div>
 </li>
