@@ -1,7 +1,9 @@
 <li class="media mb-5" style="margin-bottom: 1rem !important;">
-  <img class="align-self-center mr-3" src="/assets/images/team/{{ member.image }}"
-    style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;"
-    alt="{{ member.title }}" href="{{ member.url }}">
+  <a href="{{ member.url }}">{{ member.title }}
+    <img class="align-self-center mr-3" src="/assets/images/team/{{ member.image }}"
+      style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;"
+      alt="{{ member.title }}" href="{{ member.url }}">
+  </a>
 
   <div class="media-body custom-media-body">
     <h5 class="mt-0"><a href="{{ member.url }}">{{ member.title }}</a></h5>
