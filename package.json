@@ -4,16 +4,16 @@
     "description": "Scripts to sync members data and download publications from Google Sheets for a Jekyll site.",
     "main": "index.js",
     "scripts": {
-      "download-members": "node syncMembers.js download",
-      "upload-members": "node syncMembers.js upload",
-      "download-publications": "node downloadPublications.js"
+        "download-members": "node syncMembers.js download",
+        "upload-members": "node syncMembers.js upload",
+        "download-publications": "node downloadPublications.js"
     },
     "author": "Gary Wu",
     "license": "MIT",
     "dependencies": {
-      "node-fetch": "^2.6.7",
-      "csvtojson": "^2.0.10",
-      "js-yaml": "^4.1.0"
+        "cheerio": "^1.0.0",
+        "csvtojson": "^2.0.10",
+        "js-yaml": "^4.1.0",
+        "node-fetch": "^2.6.7"
     }
-  }
-  
+}

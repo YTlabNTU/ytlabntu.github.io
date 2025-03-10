@@ -3,9 +3,11 @@ const fs = require('fs');
 const path = require('path');
 const csv = require('csvtojson');
 const yaml = require('js-yaml');
+const cheerio = require('cheerio');
 
 // 請將此處換成你的 Google Sheets CSV URL
 const MEMBER_CSV_URL = process.env.MEMBER_CSV_URL;
+var GOOGLE_DRIVE_URL = '';
 
 /**
  * 同步資料
@@ -21,12 +23,15 @@ async function syncData(direction = 'download') {
       const csvText = await response.text();
       // 轉換成 JSON 格式，每一筆代表一位成員
       const jsonData = await csv().fromString(csvText);
+      // google drive url 是第一筆的 drive_url 欄位的資料
+      console.log(jsonData[0]);
+      GOOGLE_DRIVE_URL = jsonData[0].drive_url;
 
       // 依照每筆資料產生 Markdown 檔案
       jsonData.forEach(item => {
         const markdownContent = generateMarkdown(item);
         // 利用 join_date 與 permalink 組合成檔案名稱，並移除空白
-        // 'team/yutinghsu -> yutinghsu
+        // 例如 'team/yutinghsu -> yutinghsu'
         const fileName = (item.join_date + '-' + item.permalink.split('/')[1]).replace(/\s+/g, '_') + '.md';
         if (!fileName) {
           // 沒有檔名，跳過
@@ -36,6 +41,11 @@ async function syncData(direction = 'download') {
         fs.writeFileSync(filePath, markdownContent);
         console.log(`已更新檔案：${filePath}`);
       });
+
+      // 新增：從公開 Google Drive 資料夾下載所有相片到指定目錄
+      const imagesDestination = path.join(__dirname, '..', 'assets', 'images', 'team');
+      await downloadImagesFromPublicGoogleDrive(GOOGLE_DRIVE_URL, imagesDestination);
+
     } catch (error) {
       console.error('同步資料失敗：', error);
     }
@@ -112,7 +122,7 @@ social:
 ${educationBlock}
 ---`;
 
-const content = `
+  const content = `
 ${data.bio || ''}
 `;
   return frontMatter + '\n' + content;
@@ -166,7 +176,7 @@ function flattenFrontMatter(frontMatter) {
  * 簡單處理 Bio 區塊內容，可依需求調整，例如去除標籤
  */
 function extractBio(content) {
-  // 刪除<h3>bio</h3>標籤
+  // 刪除 <h3>Bio</h3> 標籤
   content = content.replace(/<h3\b[^>]*>Bio<\/h3>/gi, '');
   return content;
 }
@@ -201,6 +211,87 @@ function generateCSV(records) {
     lines.push(row.join(','));
   });
   return lines.join('\n');
+}
+
+/**
+ * 解析 Google Drive 資料夾 URL 取得 folderId
+ */
+function extractFolderIdFromUrl(url) {
+  // 假設資料夾 URL 為 https://drive.google.com/drive/folders/{folderId}
+  const match = url.match(/folders\/([a-zA-Z0-9_-]+)/);
+  return match ? match[1] : null;
+}
+
+/**
+ * 從公開的 Google Drive 資料夾下載所有相片
+ * 透過「嵌入式資料夾檢視」頁面取得檔案列表
+ */
+async function downloadImagesFromPublicGoogleDrive(folderUrl, destinationPath) {
+  const folderId = extractFolderIdFromUrl(folderUrl);
+  if (!folderId) {
+    console.error("無法從 Google Drive URL 中解析資料夾 ID");
+    return;
+  }
+
+  // 取得嵌入式檢視頁面
+  const embeddedUrl = `https://drive.google.com/embeddedfolderview?id=${folderId}#list`;
+  const res = await fetch(embeddedUrl);
+  const html = await res.text();
+  const $ = cheerio.load(html);
+
+  // 從所有連結中，找出包含 /file/d/ 的連結
+  const fileLinks = [];
+  $('a').each((i, el) => {
+    const href = $(el).attr('href');
+    if (href && href.includes('/file/d/')) {
+      const match = href.match(/\/file\/d\/([^\/]+)\//);
+      if (match) {
+        const fileId = match[1];
+        // 嘗試從連結文字中取得檔案名稱，若無則以 fileId 命名
+        let fileName = $(el).text().trim();
+        if (!fileName) {
+          fileName = fileId;
+        }
+        fileLinks.push({ fileId, fileName });
+      }
+    }
+  });
+
+  if (fileLinks.length === 0) {
+    console.log("找不到資料夾中的相片");
+    return;
+  }
+
+  // 確保目的目錄存在
+  if (!fs.existsSync(destinationPath)) {
+    fs.mkdirSync(destinationPath, { recursive: true });
+  }
+
+  // 下載每個檔案
+  for (const file of fileLinks) {
+    // 利用已知模式產生圖片檢視 URL
+    const imageUrl = `https://drive.google.com/uc?export=view&id=${file.fileId}`;
+    // 這裡預設副檔名為 .jpg，如有需要可進一步判斷
+    const destFilePath = path.join(destinationPath, file.fileName);
+    const dest = fs.createWriteStream(destFilePath);
+    try {
+      const imageResponse = await fetch(imageUrl);
+      await new Promise((resolve, reject) => {
+        imageResponse.body
+          .pipe(dest)
+          .on('finish', () => {
+            console.log(`已下載：${destFilePath}`);
+            resolve();
+          })
+          .on('error', err => {
+            console.error(`下載檔案 ${file.fileName} 時發生錯誤:`, err);
+            reject(err);
+          });
+      });
+    } catch (err) {
+      console.error(`下載檔案 ${file.fileName} 失敗:`, err);
+    }
+  }
 }
 
 // 可透過命令列參數指定同步方向，例如：
