@@ -4,8 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Replace this with your actual Google Sheets CSV URL.
-// const PUBLICATION_CSV_URL = process.env.PUBLICATION_CSV_URL;
-const PUBLICATION_CSV_URL = 'https://docs.google.com/spreadsheets/d/1RGmQ2-gbt0p9A2Zvr7ywIek-y2NZDBW88Mklz6sk0zg/export?format=csv&gid=1791259441';
+const PUBLICATION_CSV_URL = process.env.PUBLICATION_CSV_URL;
 
 /**
  * Convert the "Item type" string into a camelCase string.
