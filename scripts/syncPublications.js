@@ -30,7 +30,7 @@ function mapRecord(record) {
     "Author": record["Authors"] || "",
     "Title": record["Title"] || "",
     "Short Title": record["Journal"] || "", // Using "Journal" field for short title.
-    "Publication Title": record["Full journall"] || "",
+    "Publication Title": record["Full journal"] || "",
     "DOI": record["DOI"] || "",
     "Url": record["URLs"] || "",
     "Abstract Note": record["Abstract"] || "",
