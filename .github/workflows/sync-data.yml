@@ -32,11 +32,11 @@ jobs:
           SHEET_CSV_URL: ${{ secrets.MEMBER_CSV_URL }}
         run: node scripts/syncMembers.js download
 
-      # Run publication sync script
-      - name: Run Sync Script (Publication)
-        env:
-          PUBLICATION_CSV_URL: ${{ secrets.PUBLICATION_CSV_URL }}
-        run: node scripts/syncPublications.js sync
+      # # Run publication sync script
+      # - name: Run Sync Script (Publication)
+      #   env:
+      #     PUBLICATION_CSV_URL: ${{ secrets.PUBLICATION_CSV_URL }}
+      #   run: node scripts/syncPublications.js sync
 
       - name: Commit and Push Changes
         uses: EndBug/add-and-commit@v9

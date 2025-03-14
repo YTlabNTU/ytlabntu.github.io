@@ -4,6 +4,8 @@ const path = require('path');
 const csv = require('csvtojson');
 const yaml = require('js-yaml');
 const cheerio = require('cheerio');
+require('dotenv').config();
+
 
 // 請將此處換成你的 Google Sheets CSV URL
 const MEMBER_CSV_URL = process.env.MEMBER_CSV_URL;
