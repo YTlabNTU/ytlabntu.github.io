@@ -4,7 +4,7 @@ category: principal investigator
 title: Yu-Ting Hsu PhD
 chtitle: 許聿廷 博士
 image: YT.jpeg
-role: Associate Professor & Principal Investigator
+role: Professor & Principal Investigator
 permalink: 'team/yutinghsu'
 social:
   email: mailto:yutinghsu@ntu.edu.tw
@@ -25,7 +25,7 @@ education:
 ---
 
 
-I am an associate professor in the [Department of Civil Engineering](https://www.ce.ntu.edu.tw) at National Taiwan University (NTU).
+I am a professor in the [Department of Civil Engineering](https://www.ce.ntu.edu.tw) at National Taiwan University (NTU).
 
 <h3 style="color: #e36414;">Service</h3>
 <p>Board of Directors, [Chinese Institute of Transportation](https://www.cit.org.tw/GoWeb2/include/index.php) (2023-present)</p>
