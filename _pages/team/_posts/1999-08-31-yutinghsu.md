@@ -25,7 +25,6 @@ education:
 ---
 
 
-I am a professor in the [Department of Civil Engineering](https://www.ce.ntu.edu.tw) at National Taiwan University (NTU).
 
 <h3 style="color: #e36414;">Service</h3>
 <p>Board of Directors, [Chinese Institute of Transportation](https://www.cit.org.tw/GoWeb2/include/index.php) (2023-present)</p>
