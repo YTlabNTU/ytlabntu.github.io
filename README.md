@@ -27,4 +27,7 @@ Library versions used for Local Live Server testing:
 - webrick 1.9.1
 
 Other updates:
-- 
+- Create 2025-10-07-junming
+- Adjust 2024-05-11-papercitymayor (Master Student -> Alumni Master)
+- Adjust 2024-05-16-chean (Master Student -> Research Assistant)
+- Adjust 2024-05-12-wei-tien (Master Student -> Research Assistant)
