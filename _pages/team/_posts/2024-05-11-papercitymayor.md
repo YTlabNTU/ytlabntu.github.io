@@ -1,6 +1,6 @@
 ---
 layout: member
-category: master-student
+category: alumni-master
 title: Yu-Cyuan Jhong
 chtitle: 鍾淯全
 image: R12_淯全.jpg
@@ -18,9 +18,10 @@ social:
   facebook: https://www.facebook.com/JingerPaperCitySince2010
   instagram: https://www.instagram.com/jingerpapercitysince2010/
 education:
+  - "National Taiwan University, MS in Transportation Engineering (2025)"
   - "National Taiwan University, BS in Civil Engineering (2023)"
 
 ---
 
 
-Yu-Cyuan is currently the mayor of [Paper City](https://www.youtube.com/@jinger-paper-city). He puts much effort on his own YouTube channel and [Facebook fanpage](https://www.facebook.com/JingerPaperCitySince2010), and also transportation-related researches.
+Yu-Cyuan is currently the mayor of Paper City and has been operating his [YouTube channel](https://www.youtube.com/@jinger-paper-city) for over 15 years. He also puts much effort on his own [Facebook fanpage](https://www.facebook.com/JingerPaperCitySince2010), and some transportation-related researches.
