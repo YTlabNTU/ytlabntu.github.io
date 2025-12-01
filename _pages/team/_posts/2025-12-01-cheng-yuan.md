@@ -3,7 +3,7 @@ layout: member
 category: master-student
 title: Chen-Yuan Wu Hsieh
 chtitle: 吳謝辰元
-image: R14_辰元.jpg
+image: R14_辰元.JPG
 role: Master Student
 permalink: 'team/r14-chen-yuan'
 social:
